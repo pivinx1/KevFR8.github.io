@@ -58,3 +58,10 @@ div.build {
     color: black;
     display: flex;
 }
+
+footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-decoration-line: underline;
+    text-decoration-color: red;
+}
