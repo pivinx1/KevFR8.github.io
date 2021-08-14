@@ -4,11 +4,8 @@
 body{
     margin: 0%;
     padding: 0%;
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto';
     background: url('sky2.jpg');
-}
-
-header{
     height: 50vh;
     background-position: center;
     color: #ffff;
@@ -19,9 +16,12 @@ header{
   background-attachment: fixed;
 }
 
+header{
+    
+}
+
 h1{
-    color: black;
-    border-bottom: 1px solid black;
+    
 }
 
 header nav{
@@ -64,4 +64,11 @@ footer {
     color: black;
     text-decoration-line: underline;
     text-decoration-color: red;
+}
+
+.titre {
+    color: black;
+    border-bottom: 1px solid black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 20px;
 }
