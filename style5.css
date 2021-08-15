@@ -10,3 +10,24 @@ nav, li {
     font-family: sans-serif;
     font-size: 15px;
 }
+
+
+header nav a{
+  display: flexbox;
+  text-decoration: none;
+  margin-right: 5px;
+  color: #bababa
+}
+
+
+header nav a:hover {
+
+  color: white;
+  border-bottom: 1px solid white;
+  
+}
+
+
+div.retour{
+  display: flex;
+}
