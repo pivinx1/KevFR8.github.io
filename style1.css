@@ -20,7 +20,11 @@ body{
 
 nav {
 
-    background-color: #008000
+    background-color: #008000bb;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 
     
 }
