@@ -2,7 +2,7 @@ function cookieLang() {
     console.log(document.cookie)
     if (document.cookie.split(';').some((item) => item.includes('lang=en'))) {
         document.getElementById("language").value = "en";
-        document.getElementById("correction").innerHTML = "Fixed a problem with the background when zooming out!";
+        document.getElementById("corrections").innerHTML = "Fixed a problem with the background when zooming out!";
         document.getElementById("javascript").innerHTML = "Javascript test";
         document.getElementById("changelog").innerHTML = "Added the changelog";
         document.getElementById("kevcoorp").innerHTML = "Removed \"KevCoorp\" in Contact Me";
@@ -15,9 +15,9 @@ function cookieLang() {
         document.getElementById("99").innerHTML = "Build 99 Translation Update";
         document.getElementById("english").innerHTML = "English translation of the site";
         document.getElementById("design").innerHTML = "Some design changes";
-        document.getElementById("comingsoon").innerHTML = "More updates are planned in the future.";
+        document.getElementById("comingsoon").innerHTML = "<b>More updates are planned in the future.</b>";
     } else if (document.cookie.split(';').some((item) => item.includes('lang=fr'))) {
-        document.getElementById("correction").innerHTML = "Corrections d'un problème de fond-d'écran lorsqu'on dé-zoome";
+        document.getElementById("corrections").innerHTML = "corrections d'un problème de fond-d'écran lorsqu'on dé-zoome";
         document.getElementById("javascript").innerHTML = "Test de Javascript (Dans le code uniquement)";
         document.getElementById("changelog").innerHTML = "Ajout d'une catégorie \"Changelog\"";
         document.getElementById("kevcoorp").innerHTML = "Suppresion de \"KevCoorp\" dans la section \"Me contactez\"";
@@ -30,14 +30,14 @@ function cookieLang() {
         document.getElementById("99").innerHTML = "Build 99 Traduction Update";
         document.getElementById("english").innerHTML = "Traduction en anglais du site";
         document.getElementById("design").innerHTML = "Quelques changements de conception";
-        document.getElementById("comingsoon").innerHTML = "D'autres Builds sont prévus prochainnement.";
+        document.getElementById("comingsoon").innerHTML = "<b>D'autres Builds sont prévus prochainnement.</b>";
     }
     }
     function langSwitch() {
         var langId = document.getElementById("language").value;
         document.cookie = `lang=${langId};`
         if (document.cookie.split(';').some((item) => item.includes('lang=en'))) {
-            document.getElementById("correction").innerHTML = "Fixed a problem with the background when zooming out!";
+            document.getElementById("corrections").innerHTML = "Fixed a problem with the background when zooming out!";
             document.getElementById("javascript").innerHTML = "Javascript test";
             document.getElementById("changelog").innerHTML = "Added the changelog";
             document.getElementById("kevcoorp").innerHTML = "Removed \"KevCoorp\" in Contact Me";
@@ -50,9 +50,9 @@ function cookieLang() {
             document.getElementById("99").innerHTML = "Build 99 Translation Update";
             document.getElementById("english").innerHTML = "English translation of the site";
             document.getElementById("design").innerHTML = "Some design changes";
-            document.getElementById("comingsoon").innerHTML = "More updates are planned in the future.";
+            document.getElementById("comingsoon").innerHTML = "<b>More updates are planned in the future.</b>";
         } else if (document.cookie.split(';').some((item) => item.includes('lang=fr'))) {
-            document.getElementById("correction").innerHTML = "Corrections d'un problème de fond-d'écran lorsqu'on dé-zoome";
+            document.getElementById("corrections").innerHTML = "Corrections d'un problème de fond-d'écran lorsqu'on dé-zoome";
             document.getElementById("javascript").innerHTML = "Test de Javascript (Dans le code uniquement)";
             document.getElementById("changelog").innerHTML = "Ajout d'une catégorie \"Changelog\"";
             document.getElementById("kevcoorp").innerHTML = "Suppresion de \"KevCoorp\" dans la section \"Me contactez\"";
@@ -65,6 +65,6 @@ function cookieLang() {
             document.getElementById("99").innerHTML = "Build 99 Traduction Update";
             document.getElementById("english").innerHTML = "Traduction en anglais du site";
             document.getElementById("design").innerHTML = "Quelques changements de conception";
-            document.getElementById("comingsoon").innerHTML = "D'autres Builds sont prévus prochainnement.";
+            document.getElementById("comingsoon").innerHTML = "<b>D'autres Builds sont prévus prochainnement.</b>";
         }
     }
