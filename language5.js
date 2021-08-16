@@ -17,8 +17,11 @@ if (document.cookie.split(';').some((item) => item.includes('lang=en'))) {
     document.getElementById("english").innerHTML = "English translation of the site";
     document.getElementById("design").innerHTML = "Some design changes";
     document.getElementById("comingsoon").innerHTML = "<b>More updates are planned in the future.</b>";
+    document.getElementById("99.1").innerHTML = "Build 99.1 Minor update";
+    document.getElementById("navigation3").innerHTML = "Removed the underlined text";
+    document.getElementById("correction2").innerHTML = "Fixed a translation problem";
 } else if (document.cookie.split(';').some((item) => item.includes('lang=fr'))) {
-    document.getElementById("corrections").innerHTML = "corrections d'un problème de fond-d'écran lorsqu'on dé-zoome";
+    document.getElementById("corrections").innerHTML = "Corrections d'un problème de fond-d'écran lorsqu'on dé-zoome";
     document.getElementById("javascript").innerHTML = "Test de Javascript (Dans le code uniquement)";
     document.getElementById("changelog").innerHTML = "Ajout d'une catégorie \"Changelog\"";
     document.getElementById("kevcoorp").innerHTML = "Suppresion de \"KevCoorp\" dans la section \"Me contactez\"";
@@ -32,6 +35,9 @@ if (document.cookie.split(';').some((item) => item.includes('lang=en'))) {
     document.getElementById("english").innerHTML = "Traduction en anglais du site";
     document.getElementById("design").innerHTML = "Quelques changements de conception";
     document.getElementById("comingsoon").innerHTML = "<b>D'autres Builds sont prévus prochainnement.</b>";
+    document.getElementById("99.1").innerHTML = "Mise à jour mineure Build 99.1";
+    document.getElementById("navigation3").innerHTML = "Le texte souligné en rouge à était supprimét";
+    document.getElementById("correction2").innerHTML = "Correction d'un problème de traduction";
 }
 }
 function langSwitch() {
@@ -52,6 +58,9 @@ function langSwitch() {
         document.getElementById("english").innerHTML = "English translation of the site";
         document.getElementById("design").innerHTML = "Some design changes";
         document.getElementById("comingsoon").innerHTML = "<b>More updates are planned in the future.</b>";
+        document.getElementById("99.1").innerHTML = "Build 99.1 Minor update";
+        document.getElementById("navigation3").innerHTML = "Removed the underlined text";
+        document.getElementById("correction2").innerHTML = "Fixed a translation problem";
     } else if (document.cookie.split(';').some((item) => item.includes('lang=fr'))) {
         document.getElementById("corrections").innerHTML = "Corrections d'un problème de fond-d'écran lorsqu'on dé-zoome";
         document.getElementById("javascript").innerHTML = "Test de Javascript (Dans le code uniquement)";
@@ -67,6 +76,9 @@ function langSwitch() {
         document.getElementById("english").innerHTML = "Traduction en anglais du site";
         document.getElementById("design").innerHTML = "Quelques changements de conception";
         document.getElementById("comingsoon").innerHTML = "<b>D'autres Builds sont prévus prochainnement.</b>";
+        document.getElementById("99.1").innerHTML = "Mise à jour mineure Build 99.1";
+        document.getElementById("navigation3").innerHTML = "Le texte souligné en rouge à était supprimét";
+        document.getElementById("correction2").innerHTML = "Correction d'un problème de traduction";
     }
 }
 
