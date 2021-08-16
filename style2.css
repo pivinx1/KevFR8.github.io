@@ -18,11 +18,39 @@ body{
 
 
 
+nav {
+
+    background-color: #061E82bb;
+    padding: 10px;
+    backdrop-filter:blur(2px);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+    
+}
+
 header nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+header nav a{
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+
+header nav a:hover {
+
+    color: white;
+    border-bottom: 1px solid white;
+
+}
+
 
 h1{
     padding: 20px;

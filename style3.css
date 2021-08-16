@@ -16,22 +16,33 @@ body{
   background-attachment: fixed;
 }
 
-
-header nav{
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 h1{
     padding: 20px;
 }
 
+nav {
+
+    background-color: #0455AAbb;
+    padding: 10px;
+    backdrop-filter:blur(2px);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+    
+}
+
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 header nav a{
-    display: flexbox;
+    color: white;
     text-decoration: none;
     margin-right: 5px;
-    color: #bababa
 }
 
 
@@ -39,7 +50,7 @@ header nav a:hover {
 
     color: white;
     border-bottom: 1px solid white;
-    
+
 }
 
 

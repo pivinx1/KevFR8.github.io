@@ -2,40 +2,44 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <script src="language3.js"></script>
     <link rel="stylesheet" href="style3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Réseaux Sociaux</title>
+    <title id="title">Réseaux Sociaux</title>
 </head>
-<body>
+<body onload="cookieLang()">
 
     <header>
         <nav>
             <div class="retour">
                 <a href="index.html"> <i class="fas fa-undo"></i></a>
             </div>
+            <div class="onglet">
+                <select id="language" onchange="langSwitch(this.value)">
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                </select>
         </nav>
 
-        <h1>Contacte-moi !</h1>
+        <h1 id="contact">Contacte-moi !</h1>
 
-        <p>Tu aimerais pouvoir me contactez ? Tu peux me contactez sur différentes plateformes tels que:</p>
+        <p id="would">Tu aimerais pouvoir me contactez ? Tu peux me contactez sur différentes plateformes tels que:</p>
 
         <div class="lien">
-        <nav>
 
         <p>Google Gmail</p>
         <a href="mailto:ikevfr@gmail.com">ikevfr@gmail.com</a>
         <i class="fas fa-envelope"></i>
         
-        <p>Depuis Mon serveur Serveur Discord</p>
-        <a href="https://discord.gg/738trVpjpp">Clique ici !</a>
+        <p id="discord">Depuis Mon serveur Serveur Discord</p>
+        <a id="click_me" href="https://discord.gg/738trVpjpp">Clique ici !</a>
         <i class="fab fa-discord"></i>
 
-        <p>Ou encore...</p>
-        <a href="https://twitter.com/KevFR2">Sur mon Twiter en MP !</a>
+        <p id="or_even">Ou encore...</p>
+        <a id="twitter" href="https://twitter.com/KevFR2">Sur mon Twiter en MP !</a> <!-- again, i don't know what this means-->
         <i class="fab fa-twitter"></i>
-    </nav>
 </div>
     </header>
 
