@@ -24,6 +24,19 @@ h1{
     
 }
 
+nav {
+
+    background-color: #36273Cbb;
+    padding: 10px;
+    backdrop-filter:blur(2px);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+    
+}
+
 header nav{
     display: flex;
     flex-wrap: wrap;
@@ -31,7 +44,7 @@ header nav{
 }
 
 header nav a{
-    color: #bababa;
+    color: white;
     text-decoration: none;
     margin-right: 5px;
 }

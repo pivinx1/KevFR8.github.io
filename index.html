@@ -5,13 +5,13 @@
     <link rel="stylesheet" href="style1.css">
     <link rel="shortcut icon" type="/png" href="/webcpng.png"/>
     <link rel="stylesheet" href="animate.css"/>
-    <script src="js/main.js"></script>
+    <script src="language.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FireWave</title>
 </head>
-<body>
+<body onload="cookieLang()">
     <header>
         <div class="build">
         </div>
@@ -22,33 +22,37 @@
                 <a href="https://github.com/KevFR8"><i class="fab fa-github"></i></a>
             </div>
             <div class="onglet">
+                <select id="language" onchange="langSwitch(this.value)">
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                </select>
                 <i class="fab fa-windows"></i>
-                <a  href="pack.html">Pack Windows 7</a>
+                <a id="windows7pack" href="pack.html">Pack Windows 7</a>
                 <i class="fas fa-user-cog"></i>
-                <a href="about.html">A propos de moi</a>
+                <a id="about" href="about.html">A propos de moi</a>
                 <i class="fas fa-at"></i>
-                <a href="network.html">Me Contactez</a>
+                <a id="contact" href="network.html">Me Contactez</a>
                 <i class="fas fa-file-alt"></i>
                 <a href="changelog.html">Changelog</a>
             </div>
         </nav>
         <div class="princpale">
             <class class="titre">
-                <h1>Bienvenue sur FireWave !</h1>
+                <h1 id="welcome">Bienvenue sur FireWave !</h1>
             </class>
-            <h4>Fan de l'informatique ? Ce site vous permet de découvrir mes packs et bien plus encore !
-                N'hésitez pas à me contactez en cas de problèmes ! 
+            <h4 id="computer_fan">Fan de l'informatique ? Ce site vous permet de découvrir mes packs et bien plus encore !<br/>N'hésitez pas à me contactez en cas de problèmes ! 
             </h4>
             <section class="vidéo">
-                <h2>La vidéo du <strong>moment</strong> !</h2>
+                <h2 id="current_video">La vidéo du moment !</h2>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/xiuOweUS54w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </iframe>
             </section>
         </div> 
         
-            <p>Build 98.2.2 Semi-Big-Update, </p>
+            <p id="build">Build 99 Traduction Update)</p>
         <footer>
-            <p>&copy;KevCoorp's 2017 - 2021 </p>
+            <p id="copyright">&copy;KevCoorp's 2017 - 2021<br/>Traduction réalisée par Zai <!-- i don't know french, please fix this if necessary-->
+            </p>
         </footer>
 </header>
 </body>
