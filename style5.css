@@ -1,40 +1,33 @@
 body {
   margin: 0%;
   padding: 0%;
-    background-color: rgb(77, 77, 77);
+  background: url('wallpaper8.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-nav {
+.nav {
 
-  background-color: #000000bb;
-  padding: 10px;
+  background-color: #23C7FF;
+  background: url('Taskbar.png');
   backdrop-filter:blur(2px);
-  background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
+  height:30px;;
 
   
 }
 
-header nav{
+header .nav{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-header nav a{
+header .nav a{
   color: white;
   text-decoration: none;
   margin-right: 5px;
-}
-
-
-header nav a:hover {
-
-  color: white;
-  border-bottom: 1px solid white;
-
 }
 li {
     font-family: sans-serif;
@@ -42,4 +35,7 @@ li {
 }
 h1, p, h2, li {
   margin: 20px;
+  color: white;
+  text-shadow: 1px 1px 5px black 
+
 }

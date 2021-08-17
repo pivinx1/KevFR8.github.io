@@ -11,16 +11,17 @@
 </head>
 <body onload="cookieLang()">
     <header>
-        <nav>
+        <div class="nav">
             <div class="retour">
-                <a href="index.html"> <i class="fas fa-undo"></i></a>
+                <a href="index.html"><img id="return" src="IMAGE1100.png" style="width:30px; margin:1px" /></a>
             </div>
             <div class="onglet">
-                <select id="language" onchange="langSwitch(this.value)">
+                <select id="language" onchange="langSwitch(this.value)"" style="margin:6px;">
                     <option value="fr">Français</option>
                     <option value="en">English</option>
                 </select>
-        </nav>
+        </div>
+        </div>
         <class class="titre">
             <h1>Changelog</h1>
         </class>  
@@ -71,13 +72,8 @@
         <li id="correction2">Correction d'un problème de traduction</li>
             
         <h2 id="100">Refonte du site - Build 100</h2>
-        <li id="boutonlang">Le bouton des choix de langues à était modifé pour s'approcher d'un visuel
-            à celle de Windows Longhorn.
-        </li>
-        <li id="anim">Le site obtient de nouvelles animations et améliorations.</li>
         <li id="ui">Le Build 100, apporte notamment une nouvelle interface visuel !</li>
         <li id="fix2">La plupart des problèmes ont étaient corrigés</li>
-        <li id="other">D'autres nouveautés majeures/mineurs ont étaient ajoutés.</li>
 
         <p id="comingsoon"> <strong>D'autres Builds sont prévus prochainnement.</strong></p>
     </header>
