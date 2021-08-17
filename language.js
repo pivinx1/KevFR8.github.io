@@ -3,6 +3,7 @@ console.log(document.cookie)
 if (document.cookie.split(';').some((item) => item.includes('lang=en'))) {
     document.getElementById("language").value = "en";
     document.getElementById("welcome").innerHTML = "Welcome to FireWave!";
+    document.getElementById("announce").innerHTML = "<b>Build 100 is planned to have major changes.</b>";
     document.getElementById("windows7pack").innerHTML = "Windows 7 pack";
     document.getElementById("about").innerHTML = "About me";
     document.getElementById("contact").innerHTML = "Contact me";
@@ -11,6 +12,7 @@ if (document.cookie.split(';').some((item) => item.includes('lang=en'))) {
     document.getElementById("copyright").innerHTML = "&copy;KevCoorp's 2017 - 2021<br/>Translations done by Zai";
 } else if (document.cookie.split(';').some((item) => item.includes('lang=fr'))) {
     document.getElementById("welcome").innerHTML = "Bienvenue sur FireWave !";
+    document.getElementById("announce").innerHTML = "<b>Le Build 100, est prévu nous prévoyons de faire des modifications majeures.</b>";
     document.getElementById("windows7pack").innerHTML = "Pack Windows 7";
     document.getElementById("about").innerHTML = "A propois de moi";
     document.getElementById("contact").innerHTML = "Me Contactez";
@@ -24,6 +26,7 @@ function langSwitch() {
     document.cookie = `lang=${langId};`
     if (document.cookie.split(';').some((item) => item.includes('lang=en'))) {
         document.getElementById("welcome").innerHTML = "Welcome to FireWave!";
+        document.getElementById("announce").innerHTML = "<b>Build 100 is planned to have major changes.</b>";
         document.getElementById("windows7pack").innerHTML = "Windows 7 pack";
         document.getElementById("about").innerHTML = "About me";
         document.getElementById("contact").innerHTML = "Contact me";
@@ -32,6 +35,7 @@ function langSwitch() {
         document.getElementById("copyright").innerHTML = "&copy;KevCoorp's 2017 - 2021<br/>Translations done by Zai";
     } else if (document.cookie.split(';').some((item) => item.includes('lang=fr'))) {
         document.getElementById("welcome").innerHTML = "Bienvenue sur FireWave !";
+        document.getElementById("announce").innerHTML = "<b>Le Build 100, est prévu nous prévoyons de faire des modifications majeures.</b>";
         document.getElementById("windows7pack").innerHTML = "Pack Windows 7";
         document.getElementById("about").innerHTML = "A propois de moi";
         document.getElementById("contact").innerHTML = "Me Contactez";
