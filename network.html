@@ -12,16 +12,18 @@
 <body onload="cookieLang()">
 
     <header>
-        <nav>
+        <div class="nav">
             <div class="retour">
-                <a href="index.html"> <i class="fas fa-undo"></i></a>
+                <a href="index.html"><img id="return" src="IMAGE1100.png" style="width:30px; margin:1px" /></a>
             </div>
             <div class="onglet">
-                <select id="language" onchange="langSwitch(this.value)">
+                <select id="language" onchange="langSwitch(this.value)"" style="margin:6px;">
                     <option value="fr">Français</option>
                     <option value="en">English</option>
                 </select>
-        </nav>
+        </div>
+        </div>
+    </header>
 
         <h1 id="contact">Contacte-moi !</h1>
 
@@ -41,7 +43,6 @@
         <a id="twitter" href="https://twitter.com/KevFR2">Sur mon Twiter en MP !</a> <!-- again, i don't know what this means-->
         <i class="fab fa-twitter"></i>
 </div>
-    </header>
 
 </body>
 </html>
