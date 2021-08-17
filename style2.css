@@ -5,7 +5,7 @@ body{
     margin: 0%;
     padding: 0%;
     font-family: 'Roboto', sans-serif; 
-    background: url('wallpaper9.jpg');
+    background: url('img/wallpaper9.jpg');
     height: 50vh;
     background-position: center;
     color: #ffff;
@@ -21,7 +21,7 @@ body{
 .nav {
 
     background-color: #061E82bb;
-    background: url('Taskbar.png');
+    background: url('img/Taskbar.png');
     backdrop-filter:blur(2px);
     height:30px;
 
