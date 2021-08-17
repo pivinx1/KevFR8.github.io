@@ -20,6 +20,9 @@ if (document.cookie.split(';').some((item) => item.includes('lang=en'))) {
     document.getElementById("99.1").innerHTML = "Build 99.1 Minor update";
     document.getElementById("navigation3").innerHTML = "Removed the underlined text";
     document.getElementById("correction2").innerHTML = "Fixed a translation problem";
+    document.getElementById("100").innerHTML = "Build 100 - Website Redesign";
+    document.getElementById("ui").innerHTML = "Build 100 brings a new visual interface!";
+    document.getElementById("fix2").innerHTML = "Most issues have been fixed";
 } else if (document.cookie.split(';').some((item) => item.includes('lang=fr'))) {
     document.getElementById("corrections").innerHTML = "Corrections d'un problème de fond-d'écran lorsqu'on dé-zoome";
     document.getElementById("javascript").innerHTML = "Test de Javascript (Dans le code uniquement)";
@@ -38,6 +41,9 @@ if (document.cookie.split(';').some((item) => item.includes('lang=en'))) {
     document.getElementById("99.1").innerHTML = "Mise à jour mineure Build 99.1";
     document.getElementById("navigation3").innerHTML = "Le texte souligné en rouge à était supprimét";
     document.getElementById("correction2").innerHTML = "Correction d'un problème de traduction";
+    document.getElementById("100").innerHTML = "Refonte du site - Build 100";
+    document.getElementById("ui").innerHTML = "Le Build 100, apporte notamment une nouvelle interface visuel !";
+    document.getElementById("fix2").innerHTML = "La plupart des problèmes ont étaient corrigés";
 }
 }
 function langSwitch() {
