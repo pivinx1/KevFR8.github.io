@@ -24,23 +24,26 @@ body{
     background: url('Taskbar.png');
     backdrop-filter:blur(2px);
     padding:7px;
-    height:16px
+    height:16px;
+    position: fixed;
+    bottom:0%;
+    width:99.25%
 }
 
-header .nav{
+.nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-header .nav a{
+.nav a{
     color: white;
     text-decoration: none;
     margin-right: 5px;
 }
 
 
-header .nav a:hover {
+.nav a:hover {
 
     color: white;
     border-bottom: 1px solid white;
@@ -48,11 +51,11 @@ header .nav a:hover {
 }
 
 
-header .principale{
+.principale{
     margin-top: 40px;
 }
 
-header .principale h4 {
+.principale h4 {
     margin-top: -20px;
     padding: 20px;
 }
