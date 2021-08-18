@@ -1,64 +1,58 @@
 /* Pack Windows 7 */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
-body{
-    margin: 0%;
-    padding: 0%;
-    font-family: 'Roboto', sans-serif; 
-    background: url('/img/wallpaper7.jpg');
-    height: 50vh;
-    background-position: center;
-    color: #ffff;
-    text-align: center;
-    background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+body {
+	margin: 0%;
+	padding: 0%;
+	font-family: "Roboto", sans-serif;
+	background: url("/img/wallpaper7.jpg");
+	height: 50vh;
+	background-position: center;
+	color: #ffff;
+	text-align: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
-
-
-h1{
-    color: white;
-    
+h1 {
+	color: white;
 }
 
 .nav {
-
-    background-color: #3FB9D0bb;
-    background: url('/img/taskbar.png');
-    backdrop-filter:blur(2px);
-    height:30px;
-
-    
+	background-color: #3fb9d0bb;
+	background: url("/img/Taskbar.png");
+	backdrop-filter: blur(2px);
+	height: 30px;
 }
 
-header .nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+header .nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
-
-header .principale{
-    margin-top: 40px;
+header .principale {
+	margin-top: 40px;
 }
 
 header .principale h4 {
-    margin-top: -20px;
-    padding: 20px;
+	margin-top: -20px;
+	padding: 20px;
 }
 
 .gallery {
-    width:200px
+	width: 200px;
 }
 
-
 .retour {
-    max-width: 100%;
+	max-width: 100%;
 	height: auto;
 }
 
-p, h1, h2 {
-    text-shadow: 2px 2px 5px black 
+p,
+h1,
+h2 {
+	text-shadow: 2px 2px 5px black;
 }
