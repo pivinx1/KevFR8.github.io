@@ -1,10 +1,11 @@
-/* Index.html */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
+@font-face {
+    font-family: "Segoe UI 7";
+    src: url(Fonts/SegoeUI7.ttf)
+  }
 body{
     margin: 0%;
     padding: 0,5%;
-    font-family: 'Roboto';
+    font-family: 'Segoe Ui 7';
     background: url('sky2.jpg');
     height: 50vh;
     background-position: center;
@@ -16,6 +17,11 @@ body{
   background-attachment: fixed;
 }
 
+#start {
+    width:40px;
+    position: fixed;
+    bottom:1px;
+}
 
 
 .nav {
@@ -37,6 +43,11 @@ body{
 }
 
 .nav a{
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+}
+.nav p{
     color: white;
     text-decoration: none;
     margin-right: 5px;
