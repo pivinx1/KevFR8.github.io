@@ -19,24 +19,42 @@
         <class class="titre">
             <h1 id="welcome">Bienvenue sur FireWave !</h1>
         </class>
-        <h4 id="computer_fan">Fan de l'informatique ? Ce site vous permet de découvrir mes packs et bien plus encore !<br/>N'hésitez pas à me contactez en cas de problèmes ! 
-        </h4>
-        <section class="vidéo">
+        <p id="computer_fan">Fan de l'informatique ? Ce site vous permet de découvrir mes packs et bien plus encore !<br/>N'hésitez pas à me contactez en cas de problèmes ! 
+        </p>
+        <section class="video">
             <h2 id="current_video">La vidéo du moment !</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/xiuOweUS54w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </iframe>
     </section>
     </div> 
     
-    <p id="build">Build 100</p>
+    <p id="build">Milestone 2 - Build 200</p>
     <footer>
         <p id="copyright">&copy;KevCoorp's 2017 - 2021<br/>Aide & Traduction en Anglais par Zai / Aide HTML/CSS Luihum <!-- i don't know french, please fix this if necessary-->
         </p>
     </footer>
+    <div id="start-menu" style="display:none">
+        <div class="menu-item">
+            <img src="images/startmenu/pack.png"/>
+            <a id="windows7pack" href="pack">Pack Windows 7</a>
+        </div>
+        <div class="menu-item">
+            <img src="images/startmenu/info.png"/>
+            <a id="about" href="about">A propois de moi</a>
+        </div>
+        <div class="menu-item">
+            <img src="images/startmenu/wlm.png"/>
+            <a id="contact" href="network">Me contactez</a>
+        </div>
+        <div class="menu-item">
+            <img src="images/startmenu/changelog.png"/>
+            <a href="changelog">Changelog</a>
+        </div>
+    </div>
     <div class="nav">
         <div class="logo">
-            <img onclick="startIconChange()" style="display:block" src="start.png" id="start">
-            <img onclick="startIconChange()" style="display:none" src="start2.png" id="start2">
+            <img onclick="startIconChange()" style="display:block" src="images/startmenu/start3.png" id="start">
+            <img onclick="startIconChange()" style="display:none" src="images/startmenu/start4.png" id="start2">
         </div>
         <div class="onglet">
             <select id="language" onchange="langSwitch(this.value)">

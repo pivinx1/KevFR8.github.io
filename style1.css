@@ -6,11 +6,10 @@ body{
     margin: 0%;
     padding: 0,5%;
     font-family: 'Segoe Ui 7';
-    background: url('sky2.jpg');
+    background: url('images/bg/sky2.jpg');
     height: 50vh;
     background-position: center;
     color: #ffff;
-    text-align: center;
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,17 +17,41 @@ body{
 }
 
 #start, #start2 {
-    width:80px;
+    width:50px;
     position: fixed;
-    bottom:-15px;
-    left: -10px;
+    bottom:0px;
+    left: -5px;
 }
-
+#start-menu {
+    position:fixed;
+    border-radius:7px 7px 0px 0px;
+    padding:9px;
+    bottom:30px;
+    width:174px;
+    height:367px;
+    background: url('images/startmenu/StartMenuBg.png');
+    background-color:white;
+    color: black;
+}
+.menu-item {
+    padding:5px;
+    text-align: left;
+    font-size: 16px;
+    width:164px;
+}
+.menu-item a{
+    color:black;
+    text-decoration: none;
+}
+.menu-item:hover {
+    background-color:rgba(0, 140, 255, 0.308);
+    text-decoration: none;
+}
 
 .nav {
 
     background-color: #0455AAbb;
-    background: url('Taskbar.png');
+    background: url('images/startmenu/Taskbar.png');
     backdrop-filter:blur(2px);
     padding:7px;
     height:16px;
@@ -66,6 +89,9 @@ body{
 .principale{
     margin-top: 40px;
 }
+.principale h1, h2, p, iframe{
+    text-align:center
+}
 
 .principale h4 {
     margin-top: -20px;
@@ -87,8 +113,12 @@ footer {
     border-bottom: 1px solid black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     font-size: 20px;
+    text-align:center;
 }
 
 #announce {
     color: red;
+}
+.video {
+    text-align:center;
 }

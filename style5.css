@@ -1,7 +1,12 @@
-body {
+@font-face {
+  font-family: "Segoe UI 7";
+  src: url(Fonts/SegoeUI7.ttf)
+}
+body{
   margin: 0%;
-  padding: 0%;
-  background: url('wallpaper8.png');
+  padding: 0,5%;
+  font-family: 'Segoe Ui 7';
+  background: url('images/bg/wallpaper8.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,7 +16,7 @@ body {
 .nav {
 
   background-color: #23C7FF;
-  background: url('Taskbar.png');
+  background: url('images/startmenu/Taskbar.png');
   backdrop-filter:blur(2px);
   height:30px;;
 
@@ -34,6 +39,7 @@ li {
     font-size: 15px;
 }
 h1, p, h2, li {
+  font-family: 'Segoe Ui 7';
   margin: 20px;
   color: white;
   text-shadow: 1px 1px 5px black 

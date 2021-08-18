@@ -1,11 +1,12 @@
-/* Réseaux Sociaux */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
+@font-face {
+    font-family: "Segoe UI 7";
+    src: url(Fonts/SegoeUI7.ttf)
+  }
 body{
     margin: 0%;
-    padding: 0%;
-    font-family: 'Roboto', sans-serif; 
-    background: url('sky21.jpg');
+    padding: 0,5%;
+    font-family: 'Segoe Ui 7';
+    background: url('images/bg/sky21.jpg');
     height: 50vh;
     background-position: center;
     color: #ffff;
@@ -23,7 +24,7 @@ h1{
 .nav {
 
     background-color: #0455AAbb;
-    background: url('Taskbar.png');
+    background: url('images/startmenu/Taskbar.png');
     backdrop-filter:blur(2px);
     height:30px;
 
