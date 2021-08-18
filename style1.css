@@ -19,6 +19,7 @@ body{
 
 
 .nav {
+<<<<<<< Updated upstream
     background-color: #0455AAbb;
     background: url('/img/taskbar.png');
     backdrop-filter:blur(2px);
@@ -28,6 +29,16 @@ body{
     height:16px;
     
     
+=======
+	background-color: #0455aabb;
+	background: url("/img/Taskbar.png");
+	background-repeat: repeat-x;
+	backdrop-filter: blur(2px);
+	padding: 7px;
+	position: relative;
+	top: 854px;
+	height: 16px;
+>>>>>>> Stashed changes
 }
 
 header .nav{
