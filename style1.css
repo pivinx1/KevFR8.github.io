@@ -5,7 +5,7 @@ body{
     margin: 0%;
     padding: 0,5%;
     font-family: 'Roboto';
-    background: url('sky2.jpg');
+    background-image: url('sky2.jpg');
     height: 50vh;
     background-position: center;
     color: #ffff;
