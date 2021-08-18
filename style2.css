@@ -21,7 +21,7 @@ body{
 .nav {
 
     background-color: #061E82bb;
-    background: url('/img/Taskbar.png');
+    background: url('/img/taskbar.png');
     backdrop-filter:blur(2px);
     height:30px;
 

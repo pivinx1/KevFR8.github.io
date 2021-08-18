@@ -20,7 +20,7 @@ body{
 
 .nav {
     background-color: #0455AAbb;
-    background: url('/img/Taskbar.png');
+    background: url('/img/taskbar.png');
     backdrop-filter:blur(2px);
     padding:7px;
     position: relative;

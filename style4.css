@@ -26,7 +26,7 @@ h1{
 .nav {
 
     background-color: #3FB9D0bb;
-    background: url('/img/Taskbar.png');
+    background: url('/img/taskbar.png');
     backdrop-filter:blur(2px);
     height:30px;
 
