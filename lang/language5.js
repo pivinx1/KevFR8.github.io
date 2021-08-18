@@ -70,6 +70,13 @@ function langSwitch() {
         document.getElementById("100").innerHTML = "Build 100 - Website Redesign";
         document.getElementById("ui").innerHTML = "Build 100 brings a new visual interface!";
         document.getElementById("fix2").innerHTML = "Most issues have been fixed";
+        document.getElementById("titre").innerHTML = "Changed the style of the title of index.html";
+        document.getElementById("fix3").innerHTML = "Fixed some problems on the navigation bar";
+        document.getElementById("navigation4").innerHTML  = "Several changes on the navigation bar";
+        document.getElementById("fix4").innerHTML = "Fixed some minor problems";
+        document.getElementById("navbar1").innerHTML = "Minor changes on the build and navigation bar";
+        document.getElementById("comingsoon").innerHTML = "Major changes in some features";
+
     } else if (document.cookie.split(';').some((item) => item.includes('lang=fr'))) {
         document.getElementById("corrections").innerHTML = "Corrections d'un problème de fond-d'écran lorsqu'on dé-zoome";
         document.getElementById("javascript").innerHTML = "Test de Javascript (Dans le code uniquement)";
@@ -91,6 +98,12 @@ function langSwitch() {
         document.getElementById("100").innerHTML = "Refonte du site - Build 100";
         document.getElementById("ui").innerHTML = "Le Build 100, apporte notamment une nouvelle interface visuel !";
         document.getElementById("fix2").innerHTML = "La plupart des problèmes ont étaient corrigés";
+        document.getElementById("titre").innerHTML = "Changement du style du titre de la page \"index.html\"";
+        document.getElementById("fix3").innerHTML = "Correctif d'un problème sur la navbar.";
+        document.getElementById("navigation4").innerHTML = "Plusieurs changement ont étaient effectués sur la barre de navigation.";
+        document.getElementById("fix4").innerHTML =  "Correction de problèmes mineures.";
+        document.getElementById("navbar1").innerHTML = "Modification mineure sur le build et la barre de navigation.";
+        document.getElementById("comingsoon").innerHTML = "Changement majeure de certains fonctionnalité";
     }
 }
 
