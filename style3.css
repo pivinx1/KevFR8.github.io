@@ -15,35 +15,30 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
 
-h1{
-    padding: 20px;
+h1 {
+	padding: 20px;
 }
 
 .nav {
-
     background-color: #0455AAbb;
     background: url('images/startmenu/Taskbar.png');
     backdrop-filter:blur(2px);
     height:30px;
-
-    
 }
 
-header .nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+header .nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
-header .nav a{
-    color: white;
-    text-decoration: none;
-    margin-right: 5px;
+header .nav a {
+	color: white;
+	text-decoration: none;
+	margin-right: 5px;
 }
 
-
-div.retour{
-    display: flex;
+div.retour {
+	display: flex;
 }

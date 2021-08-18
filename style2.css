@@ -20,8 +20,6 @@ body{
 
 
 .nav {
-
-    background-color: #061E82bb;
     background: url('images/startmenu/Taskbar.png');
     backdrop-filter:blur(2px);
     height:30px;

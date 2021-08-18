@@ -1,5 +1,4 @@
 function cookieLang() {
-
     console.log(document.cookie)
     if (document.cookie.split(';').some((item) => item.includes('lang=en'))) {
         document.getElementById("language").value = "en";

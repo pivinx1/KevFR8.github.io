@@ -15,14 +15,10 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-    
 }
 
-
-
-h1{
-    color: white;
-    
+h1 {
+	color: white;
 }
 
 .nav {
@@ -31,36 +27,34 @@ h1{
     background: url('images/startmenu/Taskbar.png');
     backdrop-filter:blur(2px);
     height:30px;
-
-    
 }
 
-header .nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+header .nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
-
-header .principale{
-    margin-top: 40px;
+header .principale {
+	margin-top: 40px;
 }
 
 header .principale h4 {
-    margin-top: -20px;
-    padding: 20px;
+	margin-top: -20px;
+	padding: 20px;
 }
 
 .gallery {
-    width:200px
+	width: 200px;
 }
 
-
 .retour {
-    max-width: 100%;
+	max-width: 100%;
 	height: auto;
 }
 
-p, h1, h2 {
-    text-shadow: 2px 2px 5px black 
+p,
+h1,
+h2 {
+	text-shadow: 2px 2px 5px black;
 }
