@@ -28,7 +28,7 @@ if (document.cookie.split(';').some((item) => item.includes('lang=en'))) {
     document.getElementById("navigation4").innerHTML  = "Several changes on the navigation bar";
     document.getElementById("fix4").innerHTML = "Fixed some minor problems";
     document.getElementById("navbar1").innerHTML = "Minor changes on the build and navigation bar";
-    document.getElementById("comingsoon").innerHTML = "Major changes in some features";
+    document.getElementById("ui2").innerHTML = "Major changes in some features";
 } else if (document.cookie.split(';').some((item) => item.includes('lang=fr'))) {
     document.getElementById("corrections").innerHTML = "Corrections d'un problème de fond-d'écran lorsqu'on dé-zoome";
     document.getElementById("javascript").innerHTML = "Test de Javascript (Dans le code uniquement)";
@@ -55,7 +55,7 @@ if (document.cookie.split(';').some((item) => item.includes('lang=en'))) {
     document.getElementById("navigation4").innerHTML = "Plusieurs changement ont étaient effectués sur la barre de navigation.";
     document.getElementById("fix4").innerHTML =  "Correction de problèmes mineures.";
     document.getElementById("navbar1").innerHTML = "Modification mineure sur le build et la barre de navigation.";
-    document.getElementById("comingsoon").innerHTML = "Changement majeure de certains fonctionnalité";
+    document.getElementById("ui2").innerHTML = "Changement majeure de certains fonctionnalité";
 }
 }
 function langSwitch() {
@@ -87,7 +87,7 @@ function langSwitch() {
         document.getElementById("navigation4").innerHTML  = "Several changes on the navigation bar";
         document.getElementById("fix4").innerHTML = "Fixed some minor problems";
         document.getElementById("navbar1").innerHTML = "Minor changes on the build and navigation bar";
-        document.getElementById("comingsoon").innerHTML = "Major changes in some features";
+        document.getElementById("ui2").innerHTML = "Major changes in some features";
 
     } else if (document.cookie.split(';').some((item) => item.includes('lang=fr'))) {
         document.getElementById("corrections").innerHTML = "Corrections d'un problème de fond-d'écran lorsqu'on dé-zoome";
@@ -115,7 +115,7 @@ function langSwitch() {
         document.getElementById("navigation4").innerHTML = "Plusieurs changement ont étaient effectués sur la barre de navigation.";
         document.getElementById("fix4").innerHTML =  "Correction de problèmes mineures.";
         document.getElementById("navbar1").innerHTML = "Modification mineure sur le build et la barre de navigation.";
-        document.getElementById("comingsoon").innerHTML = "Changement majeure de certains fonctionnalité";
+        document.getElementById("ui2").innerHTML = "Changement majeure de certains fonctionnalité";
     }
 }
 
