@@ -6,57 +6,64 @@
     <link rel="shortcut icon" href="favicon2.ico">/>
     <link rel="stylesheet" href="animate.css"/>
     <script src="lang/language.js"></script>
+    <script src="start.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FireWave</title>
 </head>
 <body onload="cookieLang()">
-    <header>
-        <div class="build">
+    <div class="build">
+    </div>
+    <div class="princpale">
+        <class class="titre">
+            <h1 id="welcome">Bienvenue sur FireWave !</h1>
+        </class>
+        <p id="computer_fan">Fan de l'informatique ? Ce site vous permet de découvrir mes packs et bien plus encore !<br/>N'hésitez pas à me contactez en cas de problèmes ! 
+        </p>
+        <section class="video">
+            <h2 id="current_video">La vidéo du moment !</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xiuOweUS54w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </iframe>
+    </section>
+    </div> 
+    
+    <p id="build">Milestone 2 - Build 200</p>
+    <footer>
+        <p id="copyright">&copy;KevCoorp's 2017 - 2021<br/>Aide & Traduction en Anglais par Zai / Aide HTML/CSS Luihum <!-- i don't know french, please fix this if necessary-->
+        </p>
+    </footer>
+    <div id="start-menu" style="display:none">
+        <div class="menu-item">
+            <img src="images/startmenu/pack.png"/>
+            <a id="windows7pack" href="pack">Pack Windows 7</a>
         </div>
-        <div class="nav">
-            <div class="logo">
-                <a href="https://www.youtube.com/channel/UCCPSET9zTIvoaK-WwoAe-Gw"><i class="fab fa-youtube"></i></a>
-                <a href="https://twitter.com/KevFR2"><i class="fab fa-twitter"></i></a>
-                <a href="https://github.com/KevFR8"><i class="fab fa-github"></i></a>
-            </div>
-            <div class="onglet">
-                <select id="language" onchange="langSwitch(this.value)">
-                    <option value="fr">Français</option>
-                    <option value="en">English</option>
-                </select>
-                <i class="fab fa-windows"></i>
-                <a id="windows7pack" href="pack.html">Pack Windows 7</a>
-                <i class="fas fa-user-cog"></i>
-                <a id="about" href="about.html">A propos de moi</a>
-                <i class="fas fa-at"></i>
-                <a id="contact" href="network.html">Me Contactez</a>
-                <i class="fas fa-file-alt"></i>
-                <a href="changelog.html">Changelog</a>
-            </div>
+        <div class="menu-item">
+            <img src="images/startmenu/info.png"/>
+            <a id="about" href="about">A propois de moi</a>
         </div>
-        <div class="princpale">
-            <class class="titre">
-                <h1 id="announce">Milestone 2 - Le site est entrain de subir d'énorme modification !!!</h1>
-                <h1 id="welcome">Bienvenue sur FireWave !</h1>
-            </class>
-            <h4 id="computer_fan">Fan de l'informatique ? Ce site vous permet de découvrir mes packs et bien plus encore !<br/>N'hésitez pas à me contactez en cas de problèmes ! 
-            </h4>
-            <section class="vidéo">
-                <h2 id="current_video">La vidéo du moment !</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=qhE154pj_fQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </iframe>
-            </section>
-        </div> 
-        <nav id="help">
-        <a href="https://forms.gle/CZqgsTvADeBp9YVT6">You want to help the development of FireWave?<i class="fas fa-hands-helping"></i></a>
-    </nav>
-            <p id="build">Milestone 2 - Build 200</p>
-        <footer>
-            <p id="copyright">&copy;KevCoorp's 2017 - 2021<br/>Aide & Traduction en Anglais par Zai / Aide HTML/CSS Luihum <!-- i don't know french, please fix this if necessary-->
-            </p>
-        </footer>
-</header>
+        <div class="menu-item">
+            <img src="images/startmenu/wlm.png"/>
+            <a id="contact" href="network">Me contactez</a>
+        </div>
+        <div class="menu-item">
+            <img src="images/startmenu/changelog.png"/>
+            <a href="changelog">Changelog</a>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="logo">
+            <img onclick="startIconChange()" style="display:block" src="images/startmenu/start3.png" id="start">
+            <img onclick="startIconChange()" style="display:none" src="images/startmenu/start4.png" id="start2">
+        </div>
+        <div class="onglet">
+            <select id="language" onchange="langSwitch(this.value)">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+            </select>            
+            <div style="display:inline-block;" id="digital-clock"></div>
+            <script src="time.js"></script>
+        </div>
+    </div>
 </body>
 </html>

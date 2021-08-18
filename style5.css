@@ -1,19 +1,24 @@
-body {
-	margin: 0%;
-	padding: 0%;
-	background: url("/img/wallpaper8.png");
-	backdrop-filter:blur(15px);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
+@font-face {
+  font-family: "Segoe UI 7";
+  src: url(Fonts/SegoeUI7.ttf)
+}
+body{
+  margin: 0%;
+  padding: 0,5%;
+  font-family: 'Segoe Ui 7';
+  background: url('images/bg/wallpaper8.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .nav {
-	background-color: #23c7ff;
-	background: url("/img/Taskbar.png");
-	backdrop-filter: blur(2px);
-	height: 30px;
+
+  background-color: #23C7FF;
+  background: url('images/startmenu/Taskbar.png');
+  backdrop-filter:blur(2px);
+  height:30px;;
 }
 
 header .nav {
@@ -38,4 +43,11 @@ li {
 	margin: 20px;
 	color: white;
 	text-shadow: 1px 1px 5px black;
+}
+h1, p, h2, li {
+  font-family: 'Segoe Ui 7';
+  margin: 20px;
+  color: white;
+  text-shadow: 1px 1px 5px black 
+
 }
