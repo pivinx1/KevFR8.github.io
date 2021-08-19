@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <script src="lang/language3.js"></script>
@@ -9,10 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="title">Réseaux Sociaux</title>
 </head>
+
 <body onload="cookieLang()">
-        <h1 id="contact">Contacte-moi!</h1>
-        <p id="would">Tu aimerais pouvoir me contactez ? Tu peux me contactez sur différentes plateformes tels que:</p>
-        <div class="lien">
+    <h1 id="contact">Contacte-moi!</h1>
+    <p id="would">Tu aimerais pouvoir me contactez ? Tu peux me contactez sur différentes plateformes tels que:</p>
+    <div class="lien">
         <p>Google Gmail</p>
         <a href="mailto:ikevfr@gmail.com">ikevfr@gmail.com</a>
         <i class="fas fa-envelope"></i>
@@ -20,48 +22,53 @@
         <a id="click_me" href="https://discord.gg/738trVpjpp">Clique ici!</a>
         <i class="fab fa-discord"></i>
         <p id="or_even">Ou encore...</p>
-        <a id="twitter" href="https://twitter.com/KevFR2">Sur mon Twiter en MP!</a> <!-- again, i don't know what this means-->
+        <a id="twitter" href="https://twitter.com/KevFR2">Sur mon Twiter en MP!</a>
+        <!-- again, i don't know what this means-->
         <i class="fab fa-twitter"></i>
-</div>
-<div id="start-menu" style="display:none">
-    <div class="menu-item">
-        <img src="images/startmenu/pack.png"/>
-        <a id="windows7pack" href="pack">Pack Windows 7</a>
     </div>
-    <div class="menu-item">
-        <img src="images/startmenu/info.png"/>
-        <a id="about" href="about">A propois de moi</a>
+    <div id="start-menu" style="display:none">
+        <div class="menu-item">
+            <img src="images/startmenu/pack.png" />
+            <a id="windows7pack" href="pack">Pack Windows 7</a>
+        </div>
+        <div class="menu-item">
+            <img src="images/startmenu/info.png" />
+            <a id="about" href="about">A propois de moi</a>
+        </div>
+        <div class="menu-item">
+            <img src="images/startmenu/wlm.png" />
+            <a id="contact" href="network">Me contactez</a>
+        </div>
+        <div class="menu-item">
+            <img src="images/startmenu/changelog.png" />
+            <a href="changelog">Changelog</a>
+        </div>
+        <div class="menu-item">
+            <img src="images/startmenu/contribute.png" />
+            <a id="help" href="https://forms.gle/uZaLEz8HWMSiDB1D7">Aidez à développer ce site !</a>
+        </div>
+        <div class="menu-item" style="position:fixed;bottom:37px;">
+            <img src="images/startmenu/shutdown.png" />
+            <a id="shut" href="./">Fermer</a>
+        </div>
     </div>
-    <div class="menu-item">
-        <img src="images/startmenu/wlm.png"/>
-        <a id="contact" href="network">Me contactez</a>
+    <div class="nav">
+        <div class="logo">
+            <img onclick="startIconChange()"
+                onmouseover="var startIcon = document.getElementById('start'); startIcon.src = 'images/startmenu/starthover.png'"
+                style="display:block" src="images/startmenu/start.png" id="start"
+                onmouseleave="var startIcon = document.getElementById('start'); startIcon.src = 'images/startmenu/start.png'">
+            <img onclick="startIconChange()" src="images/startmenu/startclick.png" id="start2" style="display: none;">
+        </div>
+        <div class="onglet">
+            <select id="language" onchange="langSwitch(this.value)" style="position:fixed;bottom:6px;right:50px">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+            </select>
+            <div style="display:inline-block;" id="digital-clock"></div>
+            <script src="time.js"></script>
+        </div>
     </div>
-    <div class="menu-item">
-        <img src="images/startmenu/changelog.png"/>
-        <a href="changelog">Changelog</a>
-    </div>
-    <div class="menu-item">
-        <img src="images/startmenu/contribute.png"/> 
-        <a id="help" href="https://forms.gle/uZaLEz8HWMSiDB1D7">Aidez à développer ce site !</a>
-    </div>
-    <div class="menu-item" style="position:fixed;bottom:37px;">
-        <img src="images/startmenu/shutdown.png"/> 
-        <a id="shut" href="./">Fermer</a>
-    </div>
-</div>
-<div class="nav">
-    <div class="logo">
-        <img onclick="startIconChange()" style="display:block" src="images/startmenu/start3.png" id="start">
-        <img onclick="startIconChange()" style="display:none" src="images/startmenu/start4.png" id="start2">
-    </div>
-    <div class="onglet">
-        <select id="language" onchange="langSwitch(this.value)" style="position:fixed;bottom:6px;right:50px">
-            <option value="fr">Français</option>
-            <option value="en">English</option>
-        </select>            
-        <div style="display:inline-block;" id="digital-clock"></div>
-        <script src="time.js"></script>
-    </div>
-</div>
 </body>
+
 </html>
