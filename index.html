@@ -43,7 +43,6 @@ Firewave
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FireWave</title>
 </head>
-
 <body onload="cookieLang()">
     <div class="build">
     </div>
@@ -51,22 +50,30 @@ Firewave
         <class class="titre">
             <h1 id="welcome">Bienvenue sur FireWave !</h1>
         </class>
-        <p id="computer_fan">Fan de l'informatique ? Ce site vous permet de découvrir mes packs et bien plus encore
+        <figure id="audio_play">
+            <audio autoplay>
+                <source src="/sounds/startup.mp3" type="audio/mp3">
+                <source src="/sounds/startup.wav" type="audio/vnd.wave"
+            </audio>
+        </figure>
+        <p id="computer_fan">
+            Fan de l'informatique ? Ce site vous permet de découvrir mes packs et bien plus encore
             !<br />N'hésitez pas à me contactez en cas de problèmes !
         </p>
         <section class="video">
             <h2 id="current_video">La vidéo du moment !</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/xiuOweUS54w"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </iframe>
         </section>
     </div>
 
     <p id="build">Build 1000</p>
     <footer>
-        <p id="copyright">&copy;KevCoorp's 2017 - 2021<br />Aide & Traduction en Anglais par Zai / Aide HTML/CSS Luihum
+        <p id="copyright">
+            &copy;KevCoorp's 2017 - 2021<br />Aide & Traduction en Anglais par Zai / Aide HTML/CSS Luihum
             <!-- i don't know french, please fix this if necessary-->
         </p>
     </footer>
@@ -99,14 +106,14 @@ Firewave
     <div class="nav">
         <div class="logo">
             <img onclick="startIconChange()"
-                onmouseover="var startIcon = document.getElementById('start'); startIcon.src = 'images/startmenu/starthover.png'"
-                style="display:block" src="images/startmenu/start.png" id="start"
-                onmouseleave="var startIcon = document.getElementById('start'); startIcon.src = 'images/startmenu/start.png'">
+                 onmouseover="var startIcon = document.getElementById('start'); startIcon.src = 'images/startmenu/starthover.png'"
+                 style="display:block" src="images/startmenu/start.png" id="start"
+                 onmouseleave="var startIcon = document.getElementById('start'); startIcon.src = 'images/startmenu/start.png'">
             <img onclick="startIconChange()" src="images/startmenu/startclick.png" id="start2" style="display: none;">
         </div>
         <div class="onglet">
             <select id="language" onchange="langSwitch(this.value)"
-                style="position:fixed;bottom:6px;right:50px;background-image:url(images/misc/button.png);background-size:contain;border-radius:5px;">
+                    style="position:fixed;bottom:6px;right:50px;background-image:url(images/misc/button.png);background-size:contain;border-radius:5px;">
                 <option value="fr">Français</option>
                 <option value="en">English</option>
             </select>
