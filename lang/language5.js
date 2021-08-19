@@ -62,7 +62,7 @@ function cookieLang() {
         document.getElementById("navbar1").innerHTML = "Modification mineure sur le build et la barre de navigation.";
         document.getElementById("ui2").innerHTML = "Changement majeure de certains fonctionnalité";
         document.getElementById("windows7pack").innerHTML = "Pack Windows 7";
-        document.getElementById("about").innerHTML = "A propois de moi";
+        document.getElementById("about").innerHTML = "A propos de moi";
         document.getElementById("contact").innerHTML = "Me Contactez";
         document.getElementById("help").innerHTML = "Aidez à développer ce site !";
         document.getElementById("shut").innerHTML = "Fermer";
@@ -132,7 +132,7 @@ function cookieLang() {
             document.getElementById("navbar1").innerHTML = "Modification mineure sur le build et la barre de navigation.";
             document.getElementById("ui2").innerHTML = "Changement majeure de certains fonctionnalité";
             document.getElementById("windows7pack").innerHTML = "Pack Windows 7";
-            document.getElementById("about").innerHTML = "A propois de moi";
+            document.getElementById("about").innerHTML = "A propos de moi";
             document.getElementById("contact").innerHTML = "Me Contactez";
             document.getElementById("help").innerHTML = "Aidez à développer ce site !";
             document.getElementById("shut").innerHTML = "Fermer";

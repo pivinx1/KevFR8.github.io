@@ -17,7 +17,7 @@ function cookieLang() {
         document.getElementById("current_video").innerHTML = "La vidéo du moment !";
         document.getElementById("copyright").innerHTML = "&copy;KevCoorp's 2017 - 2021<br/>Aide & Traduction en Anglais par Zai / Aide HTML/CSS Luihum";
         document.getElementById("windows7pack").innerHTML = "Pack Windows 7";
-        document.getElementById("about").innerHTML = "A propois de moi";
+        document.getElementById("about").innerHTML = "A propos de moi";
         document.getElementById("contact").innerHTML = "Me Contactez";
         document.getElementById("help").innerHTML = "Aidez à développer ce site !";
         document.getElementById("shut").innerHTML = "Fermer";
@@ -42,7 +42,7 @@ function cookieLang() {
             document.getElementById("current_video").innerHTML = "La vidéo du moment !";
             document.getElementById("copyright").innerHTML = "&copy;KevCoorp's 2017 - 2021<br/>Aide & Traduction en Anglais par Zai / Aide HTML/CSS Luihum";
             document.getElementById("windows7pack").innerHTML = "Pack Windows 7";
-            document.getElementById("about").innerHTML = "A propois de moi";
+            document.getElementById("about").innerHTML = "A propos de moi";
             document.getElementById("contact").innerHTML = "Me Contactez";
             document.getElementById("help").innerHTML = "Aidez à développer ce site !";
             document.getElementById("shut").innerHTML = "Fermer";

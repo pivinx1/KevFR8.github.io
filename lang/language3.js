@@ -23,7 +23,7 @@ if (document.cookie.split(';').some((item) => item.includes('lang=en'))) {
     document.getElementById("or_even").innerHTML = "Ou encore...";
     document.getElementById("twitter").innerHTML = "Sur mon Twiter en MP !";
     document.getElementById("windows7pack").innerHTML = "Pack Windows 7";
-    document.getElementById("about").innerHTML = "A propois de moi";
+    document.getElementById("about").innerHTML = "A propos de moi";
     document.getElementById("contact2").innerHTML = "Me Contactez";
     document.getElementById("help").innerHTML = "Aidez à développer ce site !";
     document.getElementById("shut").innerHTML = "Fermer";
@@ -54,7 +54,7 @@ function langSwitch() {
         document.getElementById("or_even").innerHTML = "Ou encore...";
         document.getElementById("twitter").innerHTML = "Sur mon Twiter en MP !";
         document.getElementById("windows7pack").innerHTML = "Pack Windows 7";
-        document.getElementById("about").innerHTML = "A propois de moi";
+        document.getElementById("about").innerHTML = "A propos de moi";
         document.getElementById("contact2").innerHTML = "Me Contactez";
         document.getElementById("help").innerHTML = "Aidez à développer ce site !";
         document.getElementById("shut").innerHTML = "Fermer";

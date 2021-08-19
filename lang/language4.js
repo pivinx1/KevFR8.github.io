@@ -13,7 +13,7 @@ if (document.cookie.split(';').some((item) => item.includes('lang=en'))) {
     document.getElementById("mypack").innerHTML = "Mon Pack Windows 7 !";
     document.getElementById("2009").innerHTML = "Vous avez un ordinateur vieux de 2009 ? Grace à ce pack vous pourrez installer des logiciels sans passer par Internet Explorer !<br/> De plus il est mis à jour pour etre comptablite et existe en deux langues différentes afin d'étendre un plus grand publique ! ";
     document.getElementById("windows7pack").innerHTML = "Pack Windows 7";
-    document.getElementById("about").innerHTML = "A propois de moi";
+    document.getElementById("about").innerHTML = "A propos de moi";
     document.getElementById("contact").innerHTML = "Me Contactez";
     document.getElementById("help").innerHTML = "Aidez à développer ce site !";
     document.getElementById("shut").innerHTML = "Fermer";
@@ -34,7 +34,7 @@ function langSwitch() {
         document.getElementById("mypack").innerHTML = "Mon Pack Windows 7 !";
         document.getElementById("2009").innerHTML = "Vous avez un ordinateur vieux de 2009 ? Grace à ce pack vous pourrez installer des logiciels sans passer par Internet Explorer !<br/> De plus il est mis à jour pour etre comptablite et existe en deux langues différentes afin d'étendre un plus grand publique ! ";
         document.getElementById("windows7pack").innerHTML = "Pack Windows 7";
-        document.getElementById("about").innerHTML = "A propois de moi";
+        document.getElementById("about").innerHTML = "A propos de moi";
         document.getElementById("contact").innerHTML = "Me Contactez";
         document.getElementById("help").innerHTML = "Aidez à développer ce site !";
         document.getElementById("shut").innerHTML = "Fermer";

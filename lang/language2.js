@@ -17,7 +17,7 @@ if (document.cookie.split(';').some((item) => item.includes('lang=en'))) {
     document.getElementById("descr").innerHTML = "Hey je suis KevFR ! Je suis un passoné d'informatique et de jeux-vidéos ! Je fais des vidéos sur le jeu Progressbar95 et des tutoriels sur comment installer un OS en particulier ou simplement une simple vidéo ! N'hésite pas à me regoindresur ce je te laisse !  ";
     document.getElementById("click").innerHTML = "<i>psst, je suis cliquable !</i>"
     document.getElementById("windows7pack").innerHTML = "Pack Windows 7";
-    document.getElementById("about").innerHTML = "A propois de moi";
+    document.getElementById("about").innerHTML = "A propos de moi";
     document.getElementById("contact").innerHTML = "Me Contactez";
     document.getElementById("help").innerHTML = "Aidez à développer ce site !";
     document.getElementById("shut").innerHTML = "Fermer";
@@ -42,7 +42,7 @@ function langSwitch() {
         document.getElementById("descr").innerHTML = "Hey je suis KevFR ! Je suis un passoné d'informatique et de jeux-vidéos ! Je fais des vidéos sur le jeu Progressbar95 et des tutoriels sur comment installer un OS en particulier ou simplement une simple vidéo ! N'hésite pas à me regoindresur ce je te laisse !  ";
         document.getElementById("click").innerHTML = "<i>psst, je suis cliquable !</i>"
         document.getElementById("windows7pack").innerHTML = "Pack Windows 7";
-        document.getElementById("about").innerHTML = "A propois de moi";
+        document.getElementById("about").innerHTML = "A propos de moi";
         document.getElementById("contact").innerHTML = "Me Contactez";
         document.getElementById("help").innerHTML = "Aidez à développer ce site !";
         document.getElementById("shut").innerHTML = "Fermer";
