@@ -83,7 +83,10 @@ li {
 	font-family: sans-serif;
 	font-size: 15px;
 }
-h1,p,h2,li {
+h1,
+p,
+h2,
+li {
 	font-family: "Segoe Ui 7";
 	margin: 20px;
 	color: white;
@@ -91,12 +94,13 @@ h1,p,h2,li {
 }
 
 #language {
-	position:fixed;
-	bottom:6px;
-	right:50px;
-	background-image:url(images/misc/button.png);
-	background-size:contain;
-	border-radius:5px;
-	font-family: 'Segoe Ui 7';
+	position: fixed;
+	bottom: 6px;
+	right: 50px;
+	background-size: contain;
+	border-radius: 5px;
+	font-family: "Segoe Ui 7";
 }
-
+#digital-clock {
+	color: white;
+}
