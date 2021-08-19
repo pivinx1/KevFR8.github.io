@@ -103,3 +103,12 @@ h2 {
 .content {
 	text-align: center;
 }
+#language {
+	position:fixed;
+	bottom:6px;
+	right:50px;
+	background-image:url(images/misc/button.png);
+	background-size:contain;
+	border-radius:5px;
+	font-family: 'Segoe Ui 7';
+}
