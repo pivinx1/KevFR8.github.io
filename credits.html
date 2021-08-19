@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style6.css">
+    <script src="lang/language6.js"></script>
+    <script src="start.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credits</title>
+</head>
+<body>
+    <header>
+
+        <h1>Développeurs ayant travaillé sur Firewave</h1>
+
+        <li id="KevFR"><strong>Créateur Original du site:</strong>KevFR</li>
+        <li id="Zai"><strong>Conception & Traduction:</strong>Zai</li>
+        <li id="Luihum"><strong>Aide JS:</strong>Luihum</li>
+        <li id="markverb1"><strong>Technologie & Aide Supp:</strong>markverb1</li>
+        <li id="Pivin"><strong>Recherche et Aide HTML:</strong>Pivin</li>
+        <li id="MinegameYTB"><strong>Design & Logo</strong>MinegameYTB</li>
+
+        <h3 id="Thankyou">Merci aux développeurs d'avoir colaboré et contribuer aux développement de Firewave !</h3>
+        
+        <div id="start-menu" style="display:none">
+            <div class="menu-item">
+                <img src="images/startmenu/pack.png" />
+                <a id="windows7pack" href="pack">Pack Windows 7</a>
+            </div>
+            <div class="menu-item">
+                <img src="images/startmenu/info.png" />
+                <a id="about" href="about">A propois de moi</a>
+            </div>
+            <div class="menu-item">
+                <img src="images/startmenu/wlm.png" />
+                <a id="contact" href="network">Me contactez</a>
+            </div>
+            <div class="menu-item">
+                <img src="images/startmenu/changelog.png" />
+                <a href="changelog">Changelog</a>
+            </div>
+            <div class="menu-item">
+                <img src="images/startmenu/contribute.png" />
+                <a id="help" href="https://forms.gle/uZaLEz8HWMSiDB1D7">Aidez à développer ce site !</a>
+            </div>
+            <div class="menu-item" style="position:fixed;bottom:37px;">
+                <img src="images/startmenu/shutdown.png" />
+                <a id="shut" href="./">Fermer</a>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="logo">
+                <img onclick="startIconChange()"
+                    onmouseover="var startIcon = document.getElementById('start'); startIcon.src = 'images/startmenu/starthover.png'"
+                    style="display:block" src="images/startmenu/start.png" id="start"
+                    onmouseleave="var startIcon = document.getElementById('start'); startIcon.src = 'images/startmenu/start.png'">
+                <img onclick="startIconChange()" src="images/startmenu/startclick.png" id="start2" style="display: none;">
+            </div>
+            <div class="onglet">
+                <select id="language" onchange="langSwitch(this.value)">
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                </select>
+                <div style="display:inline-block;" id="digital-clock"></div>
+                <script src="time.js"></script>
+            </div>
+        </div>
+    
+    
+
+
+    </header>
+</body>
+</html>
