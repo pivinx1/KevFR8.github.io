@@ -8,8 +8,8 @@ body {
 	font-family: "Segoe Ui 7";
 	background: url("images/bg/sky2.jpg");
 	height: 50vh;
-	background-position: center;
-	color: #ffff;
+	color: black;
+
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -85,13 +85,6 @@ body {
 .principale {
 	margin-top: 40px;
 }
-.principale h1,
-h2,
-p,
-iframe {
-	text-align: center;
-}
-
 .principale h4 {
 	margin-top: -20px;
 	padding: 20px;
@@ -102,13 +95,8 @@ div.build {
 	display: flex;
 }
 
-footer {
-	font-family: "Segoe UI 7", Tahoma, Geneva, Verdana, sans-serif;
-	color: white;
-}
-
 .titre {
-	color: white;
+	color: black;
 	font-size: 20px;
 	text-align: center;
 }
@@ -120,12 +108,27 @@ footer {
 	text-align: center;
 }
 
-#language {
+#changelog-txt {
+	margin:20px;
+	text-shadow: black 1px 1px 2px;
+	text-align: center;
 	position:fixed;
-	bottom:6px;
-	right:50px;
-	background-image:url(images/misc/button.png);
-	background-size:contain;
-	border-radius:5px;
-	font-family: 'Segoe Ui 7';
+	left:10px;
+}
+
+#changelog-txt p {
+	position:relative;
+	bottom:15px;
+	color:white;
+}
+#changelog-win {
+	border: 0px solid white;
+
+}
+
+h1 {
+	font-size:25px;
+}
+h2 {
+	font-size:15px;
 }

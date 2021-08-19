@@ -125,50 +125,6 @@ Firewave
     <li id="other1">Amélioration Mineure sur le site.</li>
     
     <p id="comingsoon"> <strong>D'autres Builds sont prévus prochainnement.</strong></p>
-    <br />
-    <div id="start-menu" style="display:none">
-        <div class="menu-item">
-            <img src="images/startmenu/pack.png" />
-            <a id="windows7pack" href="pack">Pack Windows 7</a>
-        </div>
-        <div class="menu-item">
-            <img src="images/startmenu/info.png" />
-            <a id="about" href="about">A propois de moi</a>
-        </div>
-        <div class="menu-item">
-            <img src="images/startmenu/wlm.png" />
-            <a id="contact" href="network">Me contactez</a>
-        </div>
-        <div class="menu-item">
-            <img src="images/startmenu/changelog.png" />
-            <a href="changelog">Changelog</a>
-        </div>
-        <div class="menu-item">
-            <img src="images/startmenu/contribute.png" />
-            <a id="help" href="https://forms.gle/uZaLEz8HWMSiDB1D7">Aidez à développer ce site !</a>
-        </div>
-        <div class="menu-item" style="position:fixed;bottom:37px;">
-            <img src="images/startmenu/shutdown.png" />
-            <a id="shut" href="./">Fermer</a>
-        </div>
-    </div>
-    <div class="nav">
-        <div class="logo">
-            <img onclick="startIconChange()"
-                onmouseover="var startIcon = document.getElementById('start'); startIcon.src = 'images/startmenu/starthover.png'"
-                style="display:block" src="images/startmenu/start.png" id="start"
-                onmouseleave="var startIcon = document.getElementById('start'); startIcon.src = 'images/startmenu/start.png'">
-            <img onclick="startIconChange()" src="images/startmenu/startclick.png" id="start2" style="display: none;">
-        </div>
-        <div class="onglet">
-            <select id="language" onchange="langSwitch(this.value)">
-                <option value="fr">Français</option>
-                <option value="en">English</option>
-            </select>
-            <div style="display:inline-block;" id="digital-clock"></div>
-            <script src="time.js"></script>
-        </div>
-    </div>
 </body>
 
 </html>

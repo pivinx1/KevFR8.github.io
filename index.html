@@ -34,9 +34,9 @@ Firewave
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
     <link rel="stylesheet" href="style1.css">
     <link rel="shortcut icon" href="favicon2.ico">
-    <link rel="stylesheet" href="animate.css" />
     <script src="lang/language.js"></script>
     <script src="start.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,32 +44,137 @@ Firewave
     <title>FireWave</title>
 </head>
 <body onload="cookieLang()">
-    <div class="build">
+    <div id="changelog-txt">
+            <img src="images/misc/txt.png" style="width:64px;" />
+            <p>Changelog.txt</p>
     </div>
-    <div class="princpale">
-        <class class="titre">
-            <h1 id="welcome">Bienvenue sur FireWave !</h1>
-        </class>
-        <figure id="audio_play">
-            <audio autoplay>
-                <source src="/sounds/startup.mp3" type="audio/mp3">
-                <source src="/sounds/startup.wav" type="audio/vnd.wave"
-            </audio>
-        </figure>
-        <p id="computer_fan">
-            Fan de l'informatique ? Ce site vous permet de découvrir mes packs et bien plus encore
-            !<br />N'hésitez pas à me contactez en cas de problèmes !
-        </p>
-        <section class="video">
-            <h2 id="current_video">La vidéo du moment !</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/xiuOweUS54w"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </iframe>
-        </section>
+    <div class="window glass" style="max-width: 300px; margin: auto; position:relative;top:30px;">
+        <div class="title-bar">
+          <div class="title-bar-text">FireWave</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body">
+            <div class="princpale">
+                <class class="titre">
+                    <h1 id="welcome" style="color:black;font-size:20px;">Bienvenue sur FireWave !</h1>
+                </class>
+                <figure id="audio_play">
+                    <audio autoplay>
+                        <source src="/sounds/startup.mp3" type="audio/mp3">
+                        <source src="/sounds/startup.wav" type="audio/vnd.wave"
+                    </audio>
+                </figure>
+                <p id="computer_fan"style="color:black;">
+                    Fan de l'informatique ? Ce site vous permet de découvrir mes packs et bien plus encore
+                    !<br />N'hésitez pas à me contactez en cas de problèmes !
+                </p>
+                <section class="video">
+                    <h2 id="current_video"style="color:black;font-size:20px;">La vidéo du moment !</h2>
+                    <iframe width="280" height="158" src="https://www.youtube.com/embed/xiuOweUS54w"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
+                </section>
+            </div>
+          </div>
+      </div>
+<br/><br/>
+<div class="window glass" style="max-width: 800px;height:700px; margin: auto; position:relative;bottom:350px;">
+    <div class="title-bar">
+      <div class="title-bar-text">Changelog</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
     </div>
-
+    <div class="window-body" style="overflow-y:scroll; height:651px; display:none;">
+            <h1>Changelog</h1>
+    
+        <h2>Build 95</h2>
+    
+        <li id="corrections">Corrections d'un problème de fond-d'écran lorsqu'on dé-zoome</li>
+        <li id="javascript">
+            Test de Javascript (Dans le code uniquement)
+        </li>
+    
+        <h2>Build 97.C</h2>
+        <li id="changelog">
+            Ajout d'une catégorie "Changelog"
+        </li>
+    
+        <li id="kevcoorp">
+            Suppresion de "KevCoorp" dans la section "Me contactez"
+        </li>
+    
+        <li id="version">
+            Suppresion de la version du site dans la section "A propos"
+        </li>
+    
+        <h2>Build 98</h2>
+    
+        <li id="navigation">
+            Changement du style de la barre de navigation.
+        </li>
+    
+        <h2>Build 98.2 Semi-Big-Update</h2>
+    
+        <li id="background">Le Background utilisé dans le changelog a était remplaçé par un fond gris.</li>
+    
+        <li id="navigation2">La Barre de navigation change encore une fois de couleur pour passer au vert transparent.
+        </li>
+    
+        <li id="myself">La présentation de moi-meme à était changé.</li>
+    
+        <li id="kevcoorp2">L'emplacement de "KevCoorp" ce trouve en dessous des builds du site.</li>
+    
+        <h2 id="99">Build 99 Traduction Update</h2>
+        <li id="english">Traduction en anglais du site</li>
+        <li id="design">Quelques changements de conception</li>
+    
+    
+        <h2 id="99.1">Mise à jour mineure Build 99.1</h2>
+        <li id="navigation3">Le texte souligné en rouge à était supprimé</li>
+        <li id="correction2">Correction d'un problème de traduction</li>
+    
+        <h2 id="100">Refonte du site - Build 100</h2>
+        <li id="ui">Le Build 100, apporte notamment une nouvelle interface au site !</li>
+        <li id="fix2">La plupart des problèmes ont étaient corrigés</li>
+    
+        <h2 id="100.1">Build 100.1</h2>
+        <li id="titre">Changement du style du titre de la page "index.html"</li>
+        <li id="fix3">Correctif d'un problème sur la navbar.</li>
+    
+        <h2 id="102">Build 102</h2>
+        <li id="navigation4">Plusieurs changement ont étaient effectués sur la barre de navigation.</li>
+        <li id="fix4">Correction d'un petit problème mineure.</li>
+    
+        <h2 id="103">Build 103</h2>
+        <li id="navbar1">Des modifications mineures apportés à la navbar.</li>
+    
+        <h2 id="M2.200">Milestone 2 - Build 200</h2>
+        <li id="ui2">Changement majeure de certaines fonctionnalités</li>
+    
+        <h2 id="M2.1000">Build 1000</h2>
+        <li id="navbar2">La Bar de Navigation change d'apparence avec un mélange avec celle de Windows Vista et de 7</li>
+        <li id="time">Une heure à était ajouté.</li>
+        <li id="Language">Nous travaillons actuellement sur plusieurs langues.</li>
+        <li id="Webanim">Des animations sont en cours de réalisations.</li>
+        <li id="font">De nouvelles polices d'écritures ont étaient ajoutés.</li>
+        <li id="form">Un Google Form à étaient ajoutés.</li>
+        <li id="fix5">Plusieurs problèmes ont étaient corrigés</li>
+        <li id="icon2">De nouvelles icones ont étaient ajoutés</li>
+        <li id="favicon3">Le favicon à subit une amélioration.</li>
+        <li id="other1">Amélioration Mineure sur le site.</li>
+        
+        <p id="comingsoon"> <strong>D'autres Builds sont prévus prochainnement.</strong></p>
+    </div>
+  </div>
     <p id="build">Build 1000</p>
     <footer>
         <p id="copyright">
@@ -116,7 +221,7 @@ Firewave
                 <option value="fr">Français</option>
                 <option value="en">English</option>
             </select>
-            <div style="display:inline-block;" id="digital-clock"></div>
+            <div style="display:inline-block;color:white;" id="digital-clock"></div>
             <script src="time.js"></script>
         </div>
     </div>

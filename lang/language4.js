@@ -21,7 +21,7 @@ if (document.cookie.split(';').some((item) => item.includes('lang=en'))) {
 }
 function langSwitch() {
     var langId = document.getElementById("language").value;
-    document.cookie = `lang=${langId};`
+    document.cookie = `lang=${langId}; SameSite=None; Secure;`
     if (document.cookie.split(';').some((item) => item.includes('lang=en'))) {
         document.getElementById("mypack").innerHTML = "My Windows 7 pack!";
         document.getElementById("2009").innerHTML = "Do you have a computer from 2009? This pack allows you to install software without Internet Explorer!<br/> It is updated to be compatible and comes in 2 languages!";

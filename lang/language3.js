@@ -31,7 +31,7 @@ if (document.cookie.split(';').some((item) => item.includes('lang=en'))) {
 }
 function langSwitch() {
     var langId = document.getElementById("language").value;
-    document.cookie = `lang=${langId};`
+    document.cookie = `lang=${langId}; SameSite=None; Secure;`
     if (document.cookie.split(';').some((item) => item.includes('lang=en'))) {
         document.getElementById("title").innerHTML = "Social Networks";
         document.getElementById("contact").innerHTML = "Contact me!";
