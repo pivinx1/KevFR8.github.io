@@ -44,11 +44,11 @@ Firewave
     <title>FireWave</title>
 </head>
 <body onload="cookieLang()">
-    <div id="changelog-txt">
+    <div id="changelog-txt" onclick="document.getElementById('changelog-win').style.display = 'block'">
             <img src="images/misc/txt.png" style="width:64px;" />
             <p>Changelog.txt</p>
     </div>
-    <div class="window glass" style="max-width: 300px; margin: auto; position:relative;top:30px;">
+    <div class="window glass" id="firewave" style="max-width: 350px; margin: auto; position:relative;top:30px;">
         <div class="title-bar">
           <div class="title-bar-text">FireWave</div>
           <div class="title-bar-controls">
@@ -83,26 +83,29 @@ Firewave
             </div>
           </div>
       </div>
-<br/><br/>
-<div class="window glass" style="max-width: 800px;height:700px; margin: auto; position:relative;bottom:350px;">
-    <div class="title-bar">
+      <script src="drag.js"></script>
+<div class="window glass" id="changelog-win">
+    <div class="title-bar" id="title-bar" >
       <div class="title-bar-text">Changelog</div>
       <div class="title-bar-controls">
         <button aria-label="Minimize"></button>
         <button aria-label="Maximize"></button>
-        <button aria-label="Close"></button>
+        <button aria-label="Close" onclick="document.getElementById('changelog-win').style.display = 'none'"></button>
       </div>
     </div>
-    <div class="window-body" style="overflow-y:scroll; height:651px; display:none;">
+    <div class="window-body" style="overflow-y:scroll; height:452px;">
+        <div>
+            <p>Current progress of FireWave: <b>53%</b></p>
+            <div style="width:50%;" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="53" class="animate" >
+                <div style="width: 53%;"></div>
+            </div>
+        </div>
             <h1>Changelog</h1>
-    
         <h2>Build 95</h2>
-    
         <li id="corrections">Corrections d'un problème de fond-d'écran lorsqu'on dé-zoome</li>
         <li id="javascript">
             Test de Javascript (Dans le code uniquement)
         </li>
-    
         <h2>Build 97.C</h2>
         <li id="changelog">
             Ajout d'une catégorie "Changelog"
@@ -176,12 +179,6 @@ Firewave
     </div>
   </div>
     <p id="build">Build 1000</p>
-    <footer>
-        <p id="copyright">
-            &copy;KevCoorp's 2017 - 2021<br />Aide & Traduction en Anglais par Zai / Aide HTML/CSS Luihum
-            <!-- i don't know french, please fix this if necessary-->
-        </p>
-    </footer>
     <div id="start-menu" style="display:none">
         <div class="menu-item">
             <img src="images/startmenu/pack.png" />
