@@ -1,41 +1,107 @@
-
- <!DOCTYPE html>
+<!DOCTYPE html>
+<!--
+Firewave
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@//%%#%%%%%%#%####*(@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@#%%%%%%%#################(*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@%%%%%##########(((((((((((((/@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@#%#######((((((((((((((((((/@@@////*@@@@@@@@@@@@@@@@@@@@@@@#(@@@
+@@@@@@@@@@@@@@@#######(((((((//////////////@@@/,///////(((/@@@@@@@#(%%%%%%%((@@@
+@@@@@@@@@@@@@@######(((((/////////*******/&@@@.***////////((((((######%%%%%#@@@@
+@@@@@@@@@@@@@#####(((((/////**************@@@/********//////(((((#######%%#@@@@@
+@@@@@@@@@@@@@(##(((((/////**********,****@@@/,,*********//////(((((######(#@@@@@
+@@@@@@@@@@@@(##(((((////*******,,,,,,,,*@@@%.,,,,,********/////(((((####(%@@@@@@
+@@@@@@@@@@@####((((////******,,,,,,,,,,(@@@*,,,,,,,,*******/////(((((###%@@@@@@@
+@@@@@@@@@@@(#/##@@@@@@@@@@@@@@@##(,,,,*@@@/,,,,,,,,,,*******/////((((###@@@@@@@@
+@@@@@@@@@@@@@@@@@@/////****,@@@@@@@@#/@@@/...,,,,,,,,,******/////((((((%@@@@@@@@
+@@@@@@@@@@%%#((((///*****,,,,.....@@@@@@@,....,,,,,,,,,******////(((((%@@@@@@@@@
+@@@@@@@@#(##((((////*****,,,,.......*@@@@@@@%*,,,,,,,,,******////((/%%@@@@@@@@@@
+@@@@@@@@(###(((((////****,,,,,.....,@@@*..@@@@@@@&%%%,.,,,(%%%%@@@@@@@@@@@@@@@@@
+@@@@@@@(####(((((////*****,,,,,....@@@*. ......@@@@@@@@@@@@@@@@@*//*(@@@@@@@@@@@
+@@@@@@(######(((((/////****,,,,,,,(@@@...................,,,,,,,***#@@@@@@@@@@@@
+@@@@@@(#######((((((////******,,,,@@@,..................,,,,,,,***(@@@@@@@@@@@@@
+@@@@@(%########((((((//////*****,@@@*.................,,,,,,,,***(*@@@@@@@@@@@@@
+@@@@(%%%########((((((((//////**@@@&...............,,,,,,,,,*****#@@@@@@@@@@@@@@
+@@@(#%%%%##########((((((((////(@@@............,,,,,,,,,,,******#@@@@@@@@@@@@@@@
+@@@/%%%%((#%%%%%%%%%%##(((((((*@@@*,,,,,,,,,,,,,,,,,,,,,*******(,@@@@@@@@@@@@@@@
+@@/%@@@@@@@@@@@@@@@@@@@@@&%#(/@@@*.,,,,,,,,,,,,,,,,,*********/(#@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.,,,,,,,,,,,,************////#@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&/*******************///////(@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#//,,******////**///@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-->
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style2.css">
     <script src="lang/language2.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="start.js"></script>
+    <link rel="shortcut icon" href="favicon2.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="title">A propos de moi</title>
 </head>
-<body onload="cookieLang()">
 
-    <header>
-        <div class="nav">
-            <div class="retour">
-                <a href="./"><img id="return" src="images/misc/IMAGE1100.png" style="width:30px; margin:1px" /></a>
-            </div>
-            <div class="onglet">
-                <select id="language" onchange="langSwitch(this.value)"" style="margin:6px;">
-                    <option value="fr">Français</option>
-                    <option value="en">English</option>
-                </select>
-        </div>
-        </div>
-    </header>
+<body onload="cookieLang()">
     <h1 id="who">Qui je suis ?</h1>
 
-    <p id="descr">Hey je suis KevFR ! Je suis un passoné d'informatique et de jeux-vidéos ! Je fais des vidéos sur le jeu Progressbar95 et des tutoriels sur comment installer un OS en particulier ou simplement une simple vidéo ! N'hésite pas à me regoindre sur ce je te laisse !  </p>
+    <p id="descr">Hey je suis KevFR ! Je suis un passoné d'informatique et de jeux-vidéos ! Je fais des vidéos sur le
+        jeu Progressbar95 et des tutoriels sur comment installer un OS en particulier ou simplement une simple vidéo !
+        N'hésite pas à me regoindre sur ce je te laisse ! </p>
 
     <div class="retouri">
-        
+
     </div>
-  
-    <a href="https://www.youtube.com/channel/UCCPSET9zTIvoaK-WwoAe-Gw"><img src="images/misc/baros8.png" alt="baros8"></a>
+
+    <a href="https://www.youtube.com/channel/UCCPSET9zTIvoaK-WwoAe-Gw"><img src="images/misc/baros8.png"
+            alt="baros8"></a>
     <p id="click"><i>psst, je suis cliquable !</i></p>
-    
+    <div id="start-menu" style="display:none">
+        <div class="menu-item">
+            <img src="images/startmenu/pack.png" />
+            <a id="windows7pack" href="pack">Pack Windows 7</a>
+        </div>
+        <div class="menu-item">
+            <img src="images/startmenu/info.png" />
+            <a id="about" href="about">A propois de moi</a>
+        </div>
+        <div class="menu-item">
+            <img src="images/startmenu/wlm.png" />
+            <a id="contact" href="network">Me contactez</a>
+        </div>
+        <div class="menu-item">
+            <img src="images/startmenu/changelog.png" />
+            <a href="changelog">Changelog</a>
+        </div>
+        <div class="menu-item">
+            <img src="images/startmenu/contribute.png" />
+            <a id="help" href="https://forms.gle/uZaLEz8HWMSiDB1D7">Aidez à développer ce site !</a>
+        </div>
+        <div class="menu-item" style="position:fixed;bottom:37px;">
+            <img src="images/startmenu/shutdown.png" />
+            <a id="shut" href="./">Fermer</a>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="logo">
+            <img onclick="startIconChange()"
+                onmouseover="var startIcon = document.getElementById('start'); startIcon.src = 'images/startmenu/starthover.png'"
+                style="display:block" src="images/startmenu/start.png" id="start"
+                onmouseleave="var startIcon = document.getElementById('start'); startIcon.src = 'images/startmenu/start.png'">
+            <img onclick="startIconChange()" src="images/startmenu/startclick.png" id="start2" style="display: none;">
+        </div>
+        <div class="onglet">
+            <select id="language" onchange="langSwitch(this.value)">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+            </select>
+            <div style="display:inline-block;" id="digital-clock"></div>
+            <script src="time.js"></script>
+        </div>
+    </div>
+
 
 </body>
+
 </html>

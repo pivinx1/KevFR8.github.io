@@ -1,44 +1,102 @@
 <!DOCTYPE html>
+<!--
+Firewave
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@//%%#%%%%%%#%####*(@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@#%%%%%%%#################(*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@%%%%%##########(((((((((((((/@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@#%#######((((((((((((((((((/@@@////*@@@@@@@@@@@@@@@@@@@@@@@#(@@@
+@@@@@@@@@@@@@@@#######(((((((//////////////@@@/,///////(((/@@@@@@@#(%%%%%%%((@@@
+@@@@@@@@@@@@@@######(((((/////////*******/&@@@.***////////((((((######%%%%%#@@@@
+@@@@@@@@@@@@@#####(((((/////**************@@@/********//////(((((#######%%#@@@@@
+@@@@@@@@@@@@@(##(((((/////**********,****@@@/,,*********//////(((((######(#@@@@@
+@@@@@@@@@@@@(##(((((////*******,,,,,,,,*@@@%.,,,,,********/////(((((####(%@@@@@@
+@@@@@@@@@@@####((((////******,,,,,,,,,,(@@@*,,,,,,,,*******/////(((((###%@@@@@@@
+@@@@@@@@@@@(#/##@@@@@@@@@@@@@@@##(,,,,*@@@/,,,,,,,,,,*******/////((((###@@@@@@@@
+@@@@@@@@@@@@@@@@@@/////****,@@@@@@@@#/@@@/...,,,,,,,,,******/////((((((%@@@@@@@@
+@@@@@@@@@@%%#((((///*****,,,,.....@@@@@@@,....,,,,,,,,,******////(((((%@@@@@@@@@
+@@@@@@@@#(##((((////*****,,,,.......*@@@@@@@%*,,,,,,,,,******////((/%%@@@@@@@@@@
+@@@@@@@@(###(((((////****,,,,,.....,@@@*..@@@@@@@&%%%,.,,,(%%%%@@@@@@@@@@@@@@@@@
+@@@@@@@(####(((((////*****,,,,,....@@@*. ......@@@@@@@@@@@@@@@@@*//*(@@@@@@@@@@@
+@@@@@@(######(((((/////****,,,,,,,(@@@...................,,,,,,,***#@@@@@@@@@@@@
+@@@@@@(#######((((((////******,,,,@@@,..................,,,,,,,***(@@@@@@@@@@@@@
+@@@@@(%########((((((//////*****,@@@*.................,,,,,,,,***(*@@@@@@@@@@@@@
+@@@@(%%%########((((((((//////**@@@&...............,,,,,,,,,*****#@@@@@@@@@@@@@@
+@@@(#%%%%##########((((((((////(@@@............,,,,,,,,,,,******#@@@@@@@@@@@@@@@
+@@@/%%%%((#%%%%%%%%%%##(((((((*@@@*,,,,,,,,,,,,,,,,,,,,,*******(,@@@@@@@@@@@@@@@
+@@/%@@@@@@@@@@@@@@@@@@@@@&%#(/@@@*.,,,,,,,,,,,,,,,,,*********/(#@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.,,,,,,,,,,,,************////#@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&/*******************///////(@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#//,,******////**///@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-->
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="lang/language4.js"></script>
-    <script src="buttonclick.js"></script>
-    <link rel="stylesheet" href="/style4.css">    
+    <link rel="stylesheet" href="style4.css">
+    <link rel="shortcut icon" href="favicon2.ico">
+    <script src="start.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pack Windows</title>
 </head>
+
 <body onload="cookieLang()">
-    
-    <header>
-        <div class="nav">
-            <div class="retour">
-                <a href="./"><img id="return" src="images/misc/IMAGE1100.png" style="width:30px; margin:1px" /></a>
-            </div>
-            <div class="onglet">
-                <select id="language" onchange="langSwitch(this.value)"" style="margin:6px;">
-                    <option value="fr">Français</option>
-                    <option value="en">English</option>
-                </select>
+    <div class="content">
+        <h1 id="mypack">Mon Pack Windows 7!</h1>
+        <p id="2009">Vous avez un ordinateur vieux de 2009 ? Grace à ce pack vous pourrez installer des logiciels sans
+            passer par Internet Explorer !<br /> De plus il est mis à jour pour etre comptablite et existe en deux
+            langues différentes afin d'étendre un plus grand publique!</p>
+        <a href="https://github.com/KevFR8/Windows-7-Pack"><img src="images/misc/Windows7.png" alt="Logo"
+                class="gallery"></i></a>
+        <img src="images/misc/desktop.png" alt="Bureaux de Windows 7" class="gallery">
+    </div>
+
+    <div id="start-menu" style="display:none">
+        <div class="menu-item">
+            <img src="images/startmenu/pack.png" />
+            <a id="windows7pack" href="pack">Pack Windows 7</a>
         </div>
+        <div class="menu-item">
+            <img src="images/startmenu/info.png" />
+            <a id="about" href="about">A propois de moi</a>
         </div>
-    </header>
-
-
-        <div class="titre">
-            <h1 id="mypack">Mon Pack Windows 7!</h1>
+        <div class="menu-item">
+            <img src="images/startmenu/wlm.png" />
+            <a id="contact" href="network">Me contactez</a>
         </div>
-
-        <p id="2009">Vous avez un ordinateur vieux de 2009 ? Grace à ce pack vous pourrez installer des logiciels sans passer par Internet Explorer !<br/> De plus il est mis à jour pour etre comptablite et existe en deux langues différentes afin d'étendre un plus grand publique!</p>
-
-            
-            <a href="https://github.com/KevFR8/Windows-7-Pack"><img src="images/misc/Windows7.png" alt="Logo" class="gallery"></i></a>
-            <img src="images/misc/desktop.png" alt="Bureaux de Windows 7" class="gallery">
-        
-
-
-
+        <div class="menu-item">
+            <img src="images/startmenu/changelog.png" />
+            <a href="changelog">Changelog</a>
+        </div>
+        <div class="menu-item">
+            <img src="images/startmenu/contribute.png" />
+            <a id="help" href="https://forms.gle/uZaLEz8HWMSiDB1D7">Aidez à développer ce site !</a>
+        </div>
+        <div class="menu-item" style="position:fixed;bottom:37px;">
+            <img src="images/startmenu/shutdown.png" />
+            <a id="shut" href="./">Fermer</a>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="logo">
+            <img onclick="startIconChange()"
+                onmouseover="var startIcon = document.getElementById('start'); startIcon.src = 'images/startmenu/starthover.png'"
+                style="display:block" src="images/startmenu/start.png" id="start"
+                onmouseleave="var startIcon = document.getElementById('start'); startIcon.src = 'images/startmenu/start.png'">
+            <img onclick="startIconChange()" src="images/startmenu/startclick.png" id="start2" style="display: none;">
+        </div>
+        <div class="onglet">
+            <select id="language" onchange="langSwitch(this.value)">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+            </select>
+            <div style="display:inline-block;" id="digital-clock"></div>
+            <script src="time.js"></script>
+        </div>
+    </div>
 </body>
+
 </html>

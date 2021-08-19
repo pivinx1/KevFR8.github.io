@@ -9,6 +9,11 @@ if (document.cookie.split(';').some((item) => item.includes('lang=en'))) {
     document.getElementById("click_me").innerHTML = "Click me!";
     document.getElementById("or_even").innerHTML = "or even...";
     document.getElementById("twitter").innerHTML = "my Twitter";
+    document.getElementById("windows7pack").innerHTML = "Windows 7 pack";
+    document.getElementById("about").innerHTML = "About me";
+    document.getElementById("contact2").innerHTML = "Contact me";
+    document.getElementById("help").innerHTML = "Help develop the site!";
+    document.getElementById("shut").innerHTML = "Shut Down";
 } else if (document.cookie.split(';').some((item) => item.includes('lang=fr'))) {
     document.getElementById("title").innerHTML = "Réseaux Sociaux";
     document.getElementById("contact").innerHTML = "Contacte-moi !";
@@ -17,6 +22,11 @@ if (document.cookie.split(';').some((item) => item.includes('lang=en'))) {
     document.getElementById("click_me").innerHTML = "Clique ici !";
     document.getElementById("or_even").innerHTML = "Ou encore...";
     document.getElementById("twitter").innerHTML = "Sur mon Twiter en MP !";
+    document.getElementById("windows7pack").innerHTML = "Pack Windows 7";
+    document.getElementById("about").innerHTML = "A propos de moi";
+    document.getElementById("contact2").innerHTML = "Me Contactez";
+    document.getElementById("help").innerHTML = "Aidez à développer ce site !";
+    document.getElementById("shut").innerHTML = "Fermer";
 }
 }
 function langSwitch() {
@@ -30,6 +40,11 @@ function langSwitch() {
         document.getElementById("click_me").innerHTML = "Click me!";
         document.getElementById("or_even").innerHTML = "or even...";
         document.getElementById("twitter").innerHTML = "my Twitter";
+        document.getElementById("windows7pack").innerHTML = "Windows 7 pack";
+        document.getElementById("about").innerHTML = "About me";
+        document.getElementById("contact2").innerHTML = "Contact me";
+        document.getElementById("help").innerHTML = "Help develop the site!";
+        document.getElementById("shut").innerHTML = "Shut Down";
     } else if (document.cookie.split(';').some((item) => item.includes('lang=fr'))) {
         document.getElementById("title").innerHTML = "Réseaux Sociaux";
         document.getElementById("contact").innerHTML = "Contacte-moi !";
@@ -38,5 +53,10 @@ function langSwitch() {
         document.getElementById("click_me").innerHTML = "Clique ici !";
         document.getElementById("or_even").innerHTML = "Ou encore...";
         document.getElementById("twitter").innerHTML = "Sur mon Twiter en MP !";
+        document.getElementById("windows7pack").innerHTML = "Pack Windows 7";
+        document.getElementById("about").innerHTML = "A propos de moi";
+        document.getElementById("contact2").innerHTML = "Me Contactez";
+        document.getElementById("help").innerHTML = "Aidez à développer ce site !";
+        document.getElementById("shut").innerHTML = "Fermer";
     }
 }

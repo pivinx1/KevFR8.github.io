@@ -1,53 +1,102 @@
 @font-face {
-  font-family: "Segoe UI 7";
-  src: url(Fonts/SegoeUI7.ttf)
+	font-family: "Segoe UI 7";
+	src: url(Fonts/SegoeUI7.ttf);
 }
-body{
-  margin: 0%;
-  padding: 0,5%;
-  font-family: 'Segoe Ui 7';
-  background: url('images/bg/wallpaper8.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+body {
+	margin: 0%;
+	/*padding: 0.5%;*/
+	font-family: "Segoe Ui 7";
+	background: url("images/bg/wallpaper8.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+}
+
+#start,
+#start2 {
+	width: 50px;
+	position: fixed;
+	bottom: 0px;
+	left: -5px;
+}
+#start-menu {
+	position: fixed;
+	border-radius: 7px 7px 0px 0px;
+	padding: 9px;
+	bottom: 30px;
+	width: 174px;
+	height: 367px;
+	background: url("images/startmenu/StartMenuBg.png");
+	background-color: white;
+	color: black;
+}
+.menu-item {
+	padding: 5px;
+	text-align: left;
+	font-size: 16px;
+	width: 164px;
+}
+.menu-item a {
+	color: black;
+	text-decoration: none;
+}
+.menu-item:hover {
+	background-color: rgba(0, 140, 255, 0.308);
+	text-decoration: none;
 }
 
 .nav {
-
-  background-color: #23C7FF;
-  background: url('images/startmenu/Taskbar.png');
-  backdrop-filter:blur(2px);
-  height:30px;;
+	background-color: #0455aabb;
+	background: url("images/startmenu/Taskbar.png");
+	backdrop-filter: blur(2px);
+	padding: 7px;
+	height: 16px;
+	position: fixed;
+	bottom: 0%;
+	width: 99.25%;
 }
 
-header .nav {
+.nav {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
-header .nav a {
+.nav a {
 	color: white;
 	text-decoration: none;
 	margin-right: 5px;
+}
+.nav p {
+	color: white;
+	text-decoration: none;
+	margin-right: 5px;
+}
+
+.nav a:hover {
+	color: white;
+	border-bottom: 1px solid white;
 }
 li {
 	font-family: sans-serif;
 	font-size: 15px;
 }
-h1,
-p,
-h2,
-li {
+h1,p,h2,li {
+	font-family: "Segoe Ui 7";
 	margin: 20px;
 	color: white;
 	text-shadow: 1px 1px 5px black;
 }
-h1, p, h2, li {
-  font-family: 'Segoe Ui 7';
-  margin: 20px;
-  color: white;
-  text-shadow: 1px 1px 5px black 
 
+#language {
+	position:fixed;
+	bottom:6px;
+	right:50px;
+	background-image:url(images/misc/button.png);
+	background-size:contain;
+	border-radius:5px;
+	font-family: 'Segoe Ui 7';
 }
+

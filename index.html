@@ -1,13 +1,44 @@
 <!DOCTYPE html>
+<!--
+Firewave
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@//%%#%%%%%%#%####*(@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@#%%%%%%%#################(*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@%%%%%##########(((((((((((((/@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@#%#######((((((((((((((((((/@@@////*@@@@@@@@@@@@@@@@@@@@@@@#(@@@
+@@@@@@@@@@@@@@@#######(((((((//////////////@@@/,///////(((/@@@@@@@#(%%%%%%%((@@@
+@@@@@@@@@@@@@@######(((((/////////*******/&@@@.***////////((((((######%%%%%#@@@@
+@@@@@@@@@@@@@#####(((((/////**************@@@/********//////(((((#######%%#@@@@@
+@@@@@@@@@@@@@(##(((((/////**********,****@@@/,,*********//////(((((######(#@@@@@
+@@@@@@@@@@@@(##(((((////*******,,,,,,,,*@@@%.,,,,,********/////(((((####(%@@@@@@
+@@@@@@@@@@@####((((////******,,,,,,,,,,(@@@*,,,,,,,,*******/////(((((###%@@@@@@@
+@@@@@@@@@@@(#/##@@@@@@@@@@@@@@@##(,,,,*@@@/,,,,,,,,,,*******/////((((###@@@@@@@@
+@@@@@@@@@@@@@@@@@@/////****,@@@@@@@@#/@@@/...,,,,,,,,,******/////((((((%@@@@@@@@
+@@@@@@@@@@%%#((((///*****,,,,.....@@@@@@@,....,,,,,,,,,******////(((((%@@@@@@@@@
+@@@@@@@@#(##((((////*****,,,,.......*@@@@@@@%*,,,,,,,,,******////((/%%@@@@@@@@@@
+@@@@@@@@(###(((((////****,,,,,.....,@@@*..@@@@@@@&%%%,.,,,(%%%%@@@@@@@@@@@@@@@@@
+@@@@@@@(####(((((////*****,,,,,....@@@*. ......@@@@@@@@@@@@@@@@@*//*(@@@@@@@@@@@
+@@@@@@(######(((((/////****,,,,,,,(@@@...................,,,,,,,***#@@@@@@@@@@@@
+@@@@@@(#######((((((////******,,,,@@@,..................,,,,,,,***(@@@@@@@@@@@@@
+@@@@@(%########((((((//////*****,@@@*.................,,,,,,,,***(*@@@@@@@@@@@@@
+@@@@(%%%########((((((((//////**@@@&...............,,,,,,,,,*****#@@@@@@@@@@@@@@
+@@@(#%%%%##########((((((((////(@@@............,,,,,,,,,,,******#@@@@@@@@@@@@@@@
+@@@/%%%%((#%%%%%%%%%%##(((((((*@@@*,,,,,,,,,,,,,,,,,,,,,*******(,@@@@@@@@@@@@@@@
+@@/%@@@@@@@@@@@@@@@@@@@@@&%#(/@@@*.,,,,,,,,,,,,,,,,,*********/(#@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.,,,,,,,,,,,,************////#@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&/*******************///////(@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#//,,******////**///@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-->
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style1.css">
-    <link rel="shortcut icon" href="favicon2.ico">/>
-    <link rel="stylesheet" href="animate.css"/>
+    <link rel="shortcut icon" href="favicon2.ico">
+    <link rel="stylesheet" href="animate.css" />
     <script src="lang/language.js"></script>
     <script src="start.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FireWave</title>
@@ -19,51 +50,76 @@
         <class class="titre">
             <h1 id="welcome">Bienvenue sur FireWave !</h1>
         </class>
-        <p id="computer_fan">Fan de l'informatique ? Ce site vous permet de découvrir mes packs et bien plus encore !<br/>N'hésitez pas à me contactez en cas de problèmes ! 
+        <figure id="audio_play">
+            <audio autoplay>
+                <source src="/sounds/startup.mp3" type="audio/mp3">
+                <source src="/sounds/startup.wav" type="audio/vnd.wave"
+            </audio>
+        </figure>
+        <p id="computer_fan">
+            Fan de l'informatique ? Ce site vous permet de découvrir mes packs et bien plus encore
+            !<br />N'hésitez pas à me contactez en cas de problèmes !
         </p>
         <section class="video">
             <h2 id="current_video">La vidéo du moment !</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/xiuOweUS54w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </iframe>
-    </section>
-    </div> 
-    
-    <p id="build">Milestone 2 - Build 200</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xiuOweUS54w"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </iframe>
+        </section>
+    </div>
+
+    <p id="build">Build 1000</p>
     <footer>
-        <p id="copyright">&copy;KevCoorp's 2017 - 2021<br/>Aide & Traduction en Anglais par Zai / Aide HTML/CSS Luihum <!-- i don't know french, please fix this if necessary-->
+        <p id="copyright">
+            &copy;KevCoorp's 2017 - 2021<br />Aide & Traduction en Anglais par Zai / Aide HTML/CSS Luihum
+            <!-- i don't know french, please fix this if necessary-->
         </p>
     </footer>
     <div id="start-menu" style="display:none">
         <div class="menu-item">
-            <img src="images/startmenu/pack.png"/>
+            <img src="images/startmenu/pack.png" />
             <a id="windows7pack" href="pack">Pack Windows 7</a>
         </div>
         <div class="menu-item">
-            <img src="images/startmenu/info.png"/>
-            <a id="about" href="about">A propois de moi</a>
+            <img src="images/startmenu/info.png" />
+            <a id="about" href="about">A propos de moi</a>
         </div>
         <div class="menu-item">
-            <img src="images/startmenu/wlm.png"/>
+            <img src="images/startmenu/wlm.png" />
             <a id="contact" href="network">Me contactez</a>
         </div>
         <div class="menu-item">
-            <img src="images/startmenu/changelog.png"/>
+            <img src="images/startmenu/changelog.png" />
             <a href="changelog">Changelog</a>
+        </div>
+        <div class="menu-item">
+            <img src="images/startmenu/contribute.png" />
+            <a id="help" href="https://forms.gle/uZaLEz8HWMSiDB1D7">Aidez à développer ce site !</a>
+        </div>
+        <div class="menu-item" style="position:fixed;bottom:37px;">
+            <img src="images/startmenu/shutdown.png" />
+            <a id="shut" href="./">Fermer</a>
         </div>
     </div>
     <div class="nav">
         <div class="logo">
-            <img onclick="startIconChange()" style="display:block" src="images/startmenu/start3.png" id="start">
-            <img onclick="startIconChange()" style="display:none" src="images/startmenu/start4.png" id="start2">
+            <img onclick="startIconChange()"
+                 onmouseover="var startIcon = document.getElementById('start'); startIcon.src = 'images/startmenu/starthover.png'"
+                 style="display:block" src="images/startmenu/start.png" id="start"
+                 onmouseleave="var startIcon = document.getElementById('start'); startIcon.src = 'images/startmenu/start.png'">
+            <img onclick="startIconChange()" src="images/startmenu/startclick.png" id="start2" style="display: none;">
         </div>
         <div class="onglet">
             <select id="language" onchange="langSwitch(this.value)">
                 <option value="fr">Français</option>
                 <option value="en">English</option>
-            </select>            
+            </select>
             <div style="display:inline-block;" id="digital-clock"></div>
             <script src="time.js"></script>
         </div>
     </div>
 </body>
+
 </html>
