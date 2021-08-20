@@ -1,6 +1,6 @@
 # Bienvenue dans FireWave, un projet de site ambitieux !
 
-FireWave (Nom de code, KevWork's ou encore FireCraft), est un site internet crée par KevFR en HTML/CSS/JS. Ce site propose à ses utilisateurs de découvrir un site qui mélange un OS et un thème: L'informatique.
+FireWave (Nom de code, KevWork's ou FireCraft), est un site internet crée par KevFR en HTML/CSS/JS. Ce site propose à ses utilisateurs de découvrir un site qui mélange un OS et un thème: L'informatique.
 
 ![bg](https://user-images.githubusercontent.com/70813133/130153542-c099df1c-0ca5-4708-9232-edd2ff5868a2.png)
 
@@ -30,3 +30,5 @@ Changelog
 ![image](https://user-images.githubusercontent.com/70813133/130151913-83445972-dda0-4671-b602-4bfae9442ed4.png)
 
 Lien vers le site => https://kevfr8.github.io/ 
+
+
