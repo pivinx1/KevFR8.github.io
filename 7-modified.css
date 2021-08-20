@@ -678,7 +678,7 @@ ul.tree-view details[open]>summary:before {
 }
 
 .window.glass {
-	backdrop-filter: blur(1.5px)
+	backdrop-filter: blur(4.5px)
 }
 
 .window.glass:before {
