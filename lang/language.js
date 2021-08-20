@@ -1,7 +1,6 @@
 function cookieLang() {
     console.log(document.cookie)
     if (document.cookie.split(';').some((item) => item.includes('lang=en'))) {
-        document.getElementById("language").value = "en";
         document.getElementById("welcome").innerHTML = "Welcome to FireWave!";
         document.getElementById("computer_fan").innerHTML = "Are you a fan of computers? This site lets you download my packs and much more!<br/> Don't hesitate to contact me in case of problems!";
         document.getElementById("current_video").innerHTML = "Latest video";
@@ -33,10 +32,15 @@ function cookieLang() {
         document.getElementById("fix4").innerHTML = "Fixed some minor problems";
         document.getElementById("navbar1").innerHTML = "Minor changes on the build and navigation bar";
         document.getElementById("ui2").innerHTML = "Major changes in some features";
+        document.getElementById("windows7pack").innerHTML = "Windows 7 pack";
+        document.getElementById("about").innerHTML = "About me";
+        document.getElementById("contact").innerHTML = "Contact me";
+        document.getElementById("credits").innerHTML = "Credits";
     } else if (document.cookie.split(';').some((item) => item.includes('lang=fr'))) {
         document.getElementById("welcome").innerHTML = "Bienvenue sur FireWave !";
         document.getElementById("computer_fan").innerHTML = "Fan de l'informatique ? Ce site vous permet de découvrir mes packs et bien plus encore !<br/>N'hésitez pas à me contactez en cas de problèmes !";
         document.getElementById("current_video").innerHTML = "La vidéo du moment !";
+        document.getElementById("help").innerHTML = "Aidez à développer ce site !";
         document.getElementById("shut").innerHTML = "Fermer";
         document.getElementById("corrections").innerHTML = "Corrections d'un problème de fond-d'écran lorsqu'on dé-zoome";
         document.getElementById("javascript").innerHTML = "Test de Javascript (Dans le code uniquement)";
@@ -64,6 +68,10 @@ function cookieLang() {
         document.getElementById("fix4").innerHTML =  "Correction de problèmes mineures.";
         document.getElementById("navbar1").innerHTML = "Modification mineure sur le build et la barre de navigation.";
         document.getElementById("ui2").innerHTML = "Changement majeure de certains fonctionnalité";
+        document.getElementById("windows7pack").innerHTML = "Pack Windows 7";
+        document.getElementById("about").innerHTML = "A propos de moi";
+        document.getElementById("contact").innerHTML = "Me Contactez";
+        document.getElementById("credits").innerHTML = "Crédits";
     }
     }
     function langSwitch() {
@@ -101,6 +109,10 @@ function cookieLang() {
             document.getElementById("fix4").innerHTML = "Fixed some minor problems";
             document.getElementById("navbar1").innerHTML = "Minor changes on the build and navigation bar";
             document.getElementById("ui2").innerHTML = "Major changes in some features";
+            document.getElementById("windows7pack").innerHTML = "Windows 7 pack";
+            document.getElementById("about").innerHTML = "About me";
+            document.getElementById("contact").innerHTML = "Contact me";
+            document.getElementById("credits").innerHTML = "Credits";
         } else if (document.cookie.split(';').some((item) => item.includes('lang=fr'))) {
             document.getElementById("welcome").innerHTML = "Bienvenue sur FireWave !";
             document.getElementById("computer_fan").innerHTML = "Fan de l'informatique ? Ce site vous permet de découvrir mes packs et bien plus encore !<br/>N'hésitez pas à me contactez en cas de problèmes !";
@@ -133,5 +145,9 @@ function cookieLang() {
             document.getElementById("fix4").innerHTML =  "Correction de problèmes mineures.";
             document.getElementById("navbar1").innerHTML = "Modification mineure sur le build et la barre de navigation.";
             document.getElementById("ui2").innerHTML = "Changement majeure de certains fonctionnalité";
+            document.getElementById("windows7pack").innerHTML = "Pack Windows 7";
+            document.getElementById("about").innerHTML = "A propos de moi";
+            document.getElementById("contact").innerHTML = "Me Contactez";
+            document.getElementById("credits").innerHTML = "Crédits";
         }
     }
