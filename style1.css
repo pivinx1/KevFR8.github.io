@@ -5,11 +5,11 @@
 body {
 	margin: 0%;
 	/*padding: 0.5%;*/
-	font-family: "Segoe Ui 7";
 	background: url("images/bg/sky2.jpg");
-	height: 50vh;
-	background-position: center;
-	color: #ffff;
+	height: 100%; 
+	overflow: hidden;
+	color: black;
+
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -40,7 +40,7 @@ body {
 	font-size: 16px;
 	width: 164px;
 }
-.menu-item a {
+.menu-item a, p{
 	color: black;
 	text-decoration: none;
 }
@@ -85,13 +85,6 @@ body {
 .principale {
 	margin-top: 40px;
 }
-.principale h1,
-h2,
-p,
-iframe {
-	text-align: center;
-}
-
 .principale h4 {
 	margin-top: -20px;
 	padding: 20px;
@@ -102,13 +95,8 @@ div.build {
 	display: flex;
 }
 
-footer {
-	font-family: "Segoe UI 7", Tahoma, Geneva, Verdana, sans-serif;
-	color: white;
-}
-
 .titre {
-	color: white;
+	color: black;
 	font-size: 20px;
 	text-align: center;
 }
@@ -120,14 +108,81 @@ footer {
 	text-align: center;
 }
 
-#language {
-	position: fixed;
-	bottom: 6px;
-	right: 50px;
-	background-size: contain;
-	border-radius: 5px;
-	font-family: "Segoe Ui 7";
+#changelog-txt {
+	margin:20px;
+	text-shadow: black 1px 1px 2px;
+	text-align: center;
+	position:fixed;
+	left:10px;
+	z-index: 0;
 }
-#digital-clock {
-	color: white;
+
+#changelog-txt p {
+	position:relative;
+	bottom:15px;
+	color:white;
+}
+#firewave-txt {
+	margin:20px;
+	text-shadow: black 1px 1px 2px;
+	text-align: center;
+	position:fixed;
+	left:10px;
+	top:90px;
+	z-index: 0;
+}
+
+#firewave-txt p {
+	position:relative;
+	bottom:15px;
+	color:white;
+}
+#ie {
+	margin:20px;
+	text-shadow: black 1px 1px 2px;
+	text-align: center;
+	position:fixed;
+	left:90px;
+	z-index: 0;
+}
+
+#ie p {
+	position:relative;
+	bottom:15px;
+	color:white;
+}
+#changelog-win {
+	min-width: 650px;
+	min-height:500px;
+	max-width: 650px;
+	max-height:500px;
+	margin: auto;
+	position:absolute; 
+	display:none;
+
+}
+#ie-win {
+	min-width: 800px;
+	min-height:600px;
+	max-width: 800px;
+	max-height:600px;
+	margin: auto;
+	position:absolute; 
+	display:none;
+
+}
+
+h1 {
+	font-size:25px;
+}
+h2 {
+	font-size:15px;
+}
+
+#build {
+	color:white;
+	text-shadow: black 1px 1px 1px;
+	position:fixed;
+	bottom:20px;
+	right: 5px;
 }
