@@ -34,17 +34,18 @@ Firewave
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="7-modified.css">
+    <link id="the-theme" rel="stylesheet" href="7-modified.css">
     <link rel="stylesheet" href="style1.css">
     <link rel="shortcut icon" href="images/misc/firewave.png">
     <script src="lang/language.js"></script>
     <script src="start.js"></script>
+    <script src="theme.js"></script>
     <script src="window.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FireWave</title>
 </head>
-<body onload="cookieLang()">
+<body onload="cookieLang(); cookieTheme();">
     <div id="changelog-txt" onclick="document.getElementById('changelog-win').style.display = 'block'">
             <img src="images/misc/txt.png" style="width:64px;" />
             <p>Changelog.txt</p>
@@ -53,12 +54,14 @@ Firewave
         <img src="images/misc/firewave_shadow.png" style="width:64px;" />
         <p>Firewave</p>
 </div>
+<div id="ie" onclick="document.getElementById('ie-win').style.display = 'block';">
+    <img src="images/misc/ie8.png" style="width:64px;" />
+    <p>Internet Explorer 8</p>
+</div>
     <div class="window glass" id="firewave" style="max-width: 350px; margin: auto; position:absolute;top:30px;left:50%;" onclick="prioritizeWindow('firewave')"> 
         <div class="title-bar">
           <div class="title-bar-text">FireWave</div>
           <div class="title-bar-controls">
-            <button aria-label="Minimize"></button>
-            <button aria-label="Maximize"></button>
             <button aria-label="Close" onclick="document.getElementById('firewave').style.display = 'none'"></button>
           </div>
         </div>
@@ -92,15 +95,13 @@ Firewave
     <div class="title-bar" id="title-bar" >
       <div class="title-bar-text">Changelog</div>
       <div class="title-bar-controls">
-        <button aria-label="Minimize"></button>
-        <button aria-label="Maximize"></button>
         <button aria-label="Close" onclick="document.getElementById('changelog-win').style.display = 'none'"></button>
       </div>
     </div>
     <div class="window-body" style="overflow-y:scroll; height:452px;">
         <div>
             <p>Current progress of FireWave: <b>53%</b></p>
-            <div style="width:50%;" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="53" class="animate" >
+            <div style="width:50%;" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="53" class="animate paused" >
                 <div style="width: 53%;"></div>
             </div>
         </div>
@@ -182,23 +183,44 @@ Firewave
         <p id="comingsoon"> <strong>D'autres Builds sont prévus prochainnement.</strong></p>
     </div>
   </div>
+  <div class="window glass" id="ie-win" onclick="prioritizeWindow('ie-win')">
+    <div class="title-bar" id="title-bar" >
+      <div class="title-bar-text">Internet Explorer 8</div>
+      <div class="title-bar-controls">
+        <button aria-label="Close" onclick="document.getElementById('ie-win').style.display = 'none'"></button>
+      </div>
+    </div>
+    <div class="window-body" style=" height:552px;">
+        <section class="tabs" style="max-width: 775px">
+            <menu role="tablist" aria-label="Sample Tabs">
+              <button role="tab" aria-controls="tab-A" aria-selected="true">tab1</button>
+              <button role="tab" aria-controls="tab-B" aria-selected="false">tab2</button>
+              <button role="tab" aria-controls="tab-C" aria-selected="false">tab3</button>
+              <button role="tab" aria-controls="tab-D" aria-selected="false">tab4</button>
+            </menu>
+            <!-- the tab content -->
+            <article role="tabpanel" id="tab-A">
+                <iframe src="pack.html" style="width:740px;height:497px;"></iframe>
+            </article>
+            <article role="tabpanel" id="tab-B" hidden="true">
+                <iframe src="about.html" style="width:740px;height:497px;"></iframe>
+            </article>
+            <article role="tabpanel" id="tab-C" hidden="true">
+                <iframe src="network.html" style="width:740px;height:497px;"></iframe>
+            </article>
+            <article role="tabpanel" id="tab-D" hidden="true">
+                <iframe src="credits.html" style="width:740px;height:497px;"></iframe>
+            </article>
+          </section>
+    </div>
+  </div>
     <p id="build">Build 1000</p>
     <div id="start-menu" style="display:none">
-        <div class="menu-item">
-            <img src="images/startmenu/pack.png" />
-            <a id="windows7pack" href="pack">Pack Windows 7</a>
-        </div>
-        <div class="menu-item">
-            <img src="images/startmenu/info.png" />
-            <a id="about" href="about">A propos de moi</a>
-        </div>
-        <div class="menu-item">
-            <img src="images/startmenu/wlm.png" />
-            <a id="contact" href="network">Me contactez</a>
-        </div>
-        <div class="menu-item">
-            <img src="images/startmenu/changelog.png" />
-            <a href="changelog">Changelog</a>
+        <div class="menu-item" style="cursor:pointer;" onclick="
+            document.getElementById('ie-win').style.display = 'block';
+            document.getElementById('start-menu').style.display = 'none';
+            ">
+            <img src="images/startmenu/ie.png" />  Internet Explorer 8
         </div>
         <div class="menu-item">
             <img src="images/startmenu/contribute.png" />
@@ -218,13 +240,11 @@ Firewave
             <img onclick="startIconChange()" src="images/startmenu/startclick.png" id="start2" style="display: none;">
         </div>
         <div class="onglet">
-            <!--
-            <select id="theme">
+            <select id="theme" onchange="themeSwitch(this.value)">
                 <option value="7">Windows 7</option>
                 <option value="xp">Windows XP</option>
                 <option value="98">Windows 98</option>
             </select>
-            -->
             <select id="language" onchange="langSwitch(this.value)">
                 <option value="fr">Français</option>
                 <option value="en">English</option>
@@ -236,4 +256,6 @@ Firewave
 </body>
 <script src="drag.js"></script>
 <script src="drag2.js"></script>
+<script src="drag3.js"></script>
+<script src="7.js"></script>
 </html>

@@ -6,7 +6,7 @@
 	src: url(Fonts/SegoeUI7.ttf);
 }
 body {
-	font-family: Arial;
+	font-family: 'Segoe Ui 7';
 	font-size: 12px;
 	color: #222
 }
